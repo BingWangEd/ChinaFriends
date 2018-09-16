@@ -1,8 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
+import reducer from './reducers/index';
+import {currSections} from './helpers';
+
+export const initialState = {
+  selected_section: currSections.About
+}
+
+const store = createStore(
+  reducer,
+  initialState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>, 
+  document.getElementById('root')
+);
+
+//registerServiceWorker();
