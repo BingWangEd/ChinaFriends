@@ -6,8 +6,8 @@ export const currSections = {
 }
 
 export const colors = {
+  "gray": "#686868",
   "blue": "#0098D7",
   "red": "#EB1064",
-  "yellow": "#FFF201",
-  "gray": "#686868"
+  "yellow": "#FFF201"
 }

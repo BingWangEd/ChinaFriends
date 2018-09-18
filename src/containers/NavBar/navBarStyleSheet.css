@@ -1,0 +1,26 @@
+.tab:after {
+  display:block;
+  content: '';
+  border: solid 1px #019fb6;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  transform-origin:10% 30%;
+}
+
+h4.tab.blue:after {
+  border-color: #0098D7;
+}
+
+h4.tab.red:after {
+  border-color: #EB1064;
+}
+
+h4.tab.gray:after {
+  border-color: black;
+}
+
+h4.tab.yellow:after {
+  border-color: #FFF201;
+}
+
+.tab:hover:after { transform: scaleX(1); }

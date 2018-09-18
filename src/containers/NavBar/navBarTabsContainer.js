@@ -7,12 +7,11 @@ import NavBarTabs from './navBarTabs';
 class NavBar extends Component {
   render(){
     return (
-      <div>
         <NavBarTabs 
           tabs={currSections} 
           handleSelectSection={this.props.selectSection} 
+          logo="/ChinaFriendsLogo.jpg"
         />
-      </div>
     )
   }
 }
