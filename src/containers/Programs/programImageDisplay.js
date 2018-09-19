@@ -1,4 +1,4 @@
-mport React, {Component} from 'react';
+import React, {Component} from 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
 
@@ -10,11 +10,10 @@ const styles = {
 
 const colorList = Object.keys(colors)
 
-const Quote = ({ words, person, title }) => (
+const ProgramImageDisplay = ({ }) => (
   <div style={[styles.headerStyle]} >
-    
+    image
   </div>
 )
 
-export default Radium(Quote);
-
+export default Radium(ProgramImageDisplay);

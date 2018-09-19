@@ -9,6 +9,7 @@ const styles = {
     position: '-webkit-sticky', 
     position: 'sticky',
     top: 0,
+    background: 'white'
   },
   ulStyle: {
     position: 'absolute',

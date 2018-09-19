@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import Banner from './banner';
+import BannerView from './bannerView';
 
 class Banner extends Component {
   render(){
+    const imgSrc = "/Images/Front.jpg"
     return (
-        <Banner 
-          imgSrc = 
+        <BannerView 
+          imgSrc = {imgSrc}
         />
     )
   }
@@ -17,6 +18,5 @@ function mapStateToProps(state){
 }
 
 export default connect(
-  mapStateToProps, 
-  {selectSection}
+  mapStateToProps
 )(Banner)

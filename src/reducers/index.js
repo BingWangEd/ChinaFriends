@@ -4,6 +4,10 @@ let reducer = function (state, action){
       return Object.assign({}, state, {
         selected_section: action.section_number
       })
+    case 'SELECT_PROGRAM':
+      return Object.assign({}, state, {
+        selected_program: action.program
+      })
     default:
       return state;
   }

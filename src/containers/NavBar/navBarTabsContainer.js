@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {selectSection} from '../../actions/index';
-import {currSections} from '../../helpers';
+import {sections} from '../../helpers';
 import NavBarTabs from './navBarTabs';
 
 class NavBar extends Component {
   render(){
     return (
         <NavBarTabs 
-          tabs={currSections} 
+          tabs={sections} 
           handleSelectSection={this.props.selectSection} 
           logo="/ChinaFriendsLogo.jpg"
         />

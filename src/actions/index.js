@@ -4,3 +4,10 @@ export const selectSection = (num) => {
     section_number: num
   }
 }
+
+export const selectProgram = (program) => {
+  return {
+    type: 'SELECT_PROGRAM',
+    program
+  }
+}

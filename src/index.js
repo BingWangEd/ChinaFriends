@@ -7,10 +7,12 @@ import registerServiceWorker from './registerServiceWorker';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import reducer from './reducers/index';
-import {currSections} from './helpers';
+import {sections} from './helpers';
+import {programs} from './helpers';
 
 export const initialState = {
-  selected_section: currSections.About
+  selected_section: sections.About,
+  selected_program: "Language"
 }
 
 const store = createStore(
