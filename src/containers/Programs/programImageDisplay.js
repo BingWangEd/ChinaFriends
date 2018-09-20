@@ -3,17 +3,22 @@ import Radium from 'radium';
 import {colors} from '../../helpers';
 
 const styles = {
-  headerStyle: {
-    height: '60px'
+  div: {
+    width: '64%',
+    height: '400px',
+    position: 'relative',
+    overflow: 'hidden'
+  },
+  image: {
+    position: 'absolute',
+    height: '100%'
   }
 };
 
 const colorList = Object.keys(colors)
 
-const ProgramImageDisplay = ({ }) => (
-  <div style={[styles.headerStyle]} >
-    image
-  </div>
+const ProgramImageDisplay = ({ programImage }) => (
+  <div style={[styles.div]}><img style={[styles.image]} src={process.env.PUBLIC_URL+programImage} alt="program image" /></div>
 )
 
 export default Radium(ProgramImageDisplay);

@@ -2,31 +2,64 @@ import React, {Component} from 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
 import ProgramButton from './programButton';
+import ProgramImageDisplay from './programImageDisplay';
+import './programsStyleSheet.css';
 
 const styles = {
-  headerStyle: {
-    height: '60px'
+  programGrid: {
+    display: 'inline',
+    float: 'left',
+    width: '36%'
   }
 };
 
-const colorList = Object.keys(colors)
-
-const ProgramNames = ({ programs, selectProgram }) => (
-  <div style={[styles.headerStyle]} >
-    <ul>
-    {
-      Object.keys(programs).map((key)=>{
-        return (
-            <ProgramButton 
-              title={key}
-              id={programs[key].id}
-              description={programs[key].description}
-              imgSrc={programs[key].imgSrc}
-            />
-        )
-      })
-    }
-    </ul>
+const ProgramNames = ({ programs, programImage, selectProgram, setProgramImage, unsetProgramImage }) => (
+  <div>
+    <div style={[styles.programGrid]}>
+      <div>
+        <ProgramButton 
+          title="Language"
+          id={programs["Language"].id}
+          description={programs["Language"].description}
+          imgSrc={programs["Language"].imgSrc}
+          selectProgram={selectProgram}
+          setProgramImage={setProgramImage}
+          unsetProgramImage={unsetProgramImage}
+        />
+        <ProgramButton 
+          title="Culture"
+          id={programs["Culture"].id}
+          description={programs["Culture"].description}
+          imgSrc={programs["Culture"].imgSrc}
+          selectProgram={selectProgram}
+          setProgramImage={setProgramImage}
+          unsetProgramImage={unsetProgramImage}
+        />
+      </div>
+      <div>
+        <ProgramButton 
+          title="AfterSchool"
+          id={programs["AfterSchool"].id}
+          description={programs["AfterSchool"].description}
+          imgSrc={programs["AfterSchool"].imgSrc}
+          selectProgram={selectProgram}
+          setProgramImage={setProgramImage}
+          unsetProgramImage={unsetProgramImage}
+        />
+        <ProgramButton 
+          title="Trip"
+          id={programs["Trip"].id}
+          description={programs["Trip"].description}
+          imgSrc={programs["Trip"].imgSrc} 
+          selectProgram={selectProgram}
+          setProgramImage={setProgramImage}
+          unsetProgramImage={unsetProgramImage}
+        />
+      </div>
+    </div>
+    <div style={[styles.inlineBlock]}>
+      <ProgramImageDisplay programImage={programImage} />
+    </div>
   </div>
 )
 

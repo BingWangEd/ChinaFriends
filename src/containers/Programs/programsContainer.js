@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {programs} from '../../helpers';
-import {selectProgram} from '../../actions/index';
+import {selectProgram, setProgramImage, unsetProgramImage} from '../../actions/index';
 import ProgramNames from './programNames';
 
 class ProgramFlags extends Component {
@@ -10,6 +10,9 @@ class ProgramFlags extends Component {
       <ProgramNames 
         programs={programs}
         selectProgram={this.props.selectProgram}
+        setProgramImage={this.props.setProgramImage}
+        unsetProgramImage={this.props.unsetProgramImage}
+        programImage = {this.props.program_image}
       />
     )
   }
@@ -20,5 +23,6 @@ function mapStateToProps(state){
 }
 
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  {selectProgram, setProgramImage, unsetProgramImage}
 )(ProgramFlags)

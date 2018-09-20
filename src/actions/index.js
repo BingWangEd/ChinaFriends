@@ -11,3 +11,17 @@ export const selectProgram = (program) => {
     program
   }
 }
+
+export const setProgramImage = (imgSrc) => {
+  return {
+    type: 'SET_PROGRAM_IMAGE',
+    imgSrc
+  }
+}
+
+export const unsetProgramImage = () => {
+  return {
+    type: 'UNSET_PROGRAM_IMAGE',
+    imgSrc: 'Images/ProgramFront.jpg'
+  }
+}
