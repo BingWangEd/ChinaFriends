@@ -10,28 +10,37 @@ const styles = {
     display: 'inline',
     float: 'left',
     width: '36%'
+  },
+  center: {
+    margin: '60px auto',
+    width: '85%'
   }
 };
 
-const ProgramNames = ({ programs, programImage, selectProgram, setProgramImage, unsetProgramImage }) => (
-  <div>
+const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unselectProgram, setProgramImage, unsetProgramImage }) => (
+  <div style={[styles.center]}>
     <div style={[styles.programGrid]}>
       <div>
         <ProgramButton 
           title="Language"
           id={programs["Language"].id}
+          ifSelected={currProgram==="Language" ? true : false}
           description={programs["Language"].description}
           imgSrc={programs["Language"].imgSrc}
           selectProgram={selectProgram}
+          unselectProgram={unselectProgram}
           setProgramImage={setProgramImage}
           unsetProgramImage={unsetProgramImage}
         />
         <ProgramButton 
           title="Culture"
           id={programs["Culture"].id}
+          ifSelected={currProgram==="Culture" ? true : false}
+          currProgram={currProgram}
           description={programs["Culture"].description}
           imgSrc={programs["Culture"].imgSrc}
           selectProgram={selectProgram}
+          unselectProgram={unselectProgram}
           setProgramImage={setProgramImage}
           unsetProgramImage={unsetProgramImage}
         />
@@ -40,18 +49,24 @@ const ProgramNames = ({ programs, programImage, selectProgram, setProgramImage, 
         <ProgramButton 
           title="AfterSchool"
           id={programs["AfterSchool"].id}
+          ifSelected={currProgram==="AfterSchool" ? true : false}
+          currProgram={currProgram}
           description={programs["AfterSchool"].description}
           imgSrc={programs["AfterSchool"].imgSrc}
           selectProgram={selectProgram}
+          unselectProgram={unselectProgram}
           setProgramImage={setProgramImage}
           unsetProgramImage={unsetProgramImage}
         />
         <ProgramButton 
           title="Trip"
           id={programs["Trip"].id}
+          ifSelected={currProgram==="Trip" ? true : false}
+          currProgram={currProgram}
           description={programs["Trip"].description}
           imgSrc={programs["Trip"].imgSrc} 
           selectProgram={selectProgram}
+          unselectProgram={unselectProgram}
           setProgramImage={setProgramImage}
           unsetProgramImage={unsetProgramImage}
         />

@@ -5,6 +5,7 @@ let reducer = function (state, action){
         selected_section: action.section_number
       })
     case 'SELECT_PROGRAM':
+    case 'UNSELECT_PROGRAM':
       return Object.assign({}, state, {
         selected_program: action.program
       })

@@ -12,6 +12,20 @@ export const selectProgram = (program) => {
   }
 }
 
+export const unselectProgram = () => {
+  return {
+    type: 'UNSELECT_PROGRAM',
+    program: null
+  }
+}
+
+export const hoverProgram = (program) => {
+  return {
+    type: 'HOVER_PROGRAM',
+    hover_program: program
+  }
+}
+
 export const setProgramImage = (imgSrc) => {
   return {
     type: 'SET_PROGRAM_IMAGE',

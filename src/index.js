@@ -12,8 +12,8 @@ import {programs} from './helpers';
 
 export const initialState = {
   selected_section: sections.About,
-  selected_program: "Language",
-  program_image: "Images/ProgramFront.jpg"
+  selected_program: null,
+  program_image: "Images/Language.jpg"
 }
 
 const store = createStore(

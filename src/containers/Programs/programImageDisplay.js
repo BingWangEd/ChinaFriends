@@ -11,9 +11,14 @@ const styles = {
   },
   image: {
     position: 'absolute',
-    height: '100%'
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: '100%',
+    transition: 'all 3s ease'
   }
 };
+
 
 const colorList = Object.keys(colors)
 

@@ -9,7 +9,8 @@ const styles = {
     position: '-webkit-sticky', 
     position: 'sticky',
     top: 0,
-    background: 'white'
+    background: 'white',
+    zIndex: '9'
   },
   ulStyle: {
     position: 'absolute',
@@ -37,6 +38,10 @@ const styles = {
   logoStyle: {
     height: '50px',
     float: 'right'
+  },
+  center: {
+    margin: 'auto',
+    width: '85%'
   }
 };
 
@@ -44,19 +49,21 @@ const colorList = Object.keys(colors)
 
 const NavBarTabs = ({ tabs, handleSelectSection, logo }) => (
   <div style={[styles.headerStyle]} >
-    <ul style={[styles.ulStyle]}>
-    {
-      Object.keys(tabs).map((key)=>{
-        const classStyleNames = 'tab '+ colorList[tabs[key]-1]
-        return (
-            <li style={[styles.listStyle]} key={tabs[key]}>
-              <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(tabs[key])}}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
-            </li>
-        )
-      })
-    }
-    </ul>
-    <div><img style={[styles.logoStyle]} src={process.env.PUBLIC_URL+logo} alt="character" /></div>
+    <div style={[styles.center]}>
+      <ul style={[styles.ulStyle]}>
+      {
+        Object.keys(tabs).map((key)=>{
+          const classStyleNames = 'tab '+ colorList[tabs[key]-1]
+          return (
+              <li style={[styles.listStyle]} key={tabs[key]}>
+                <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(tabs[key])}}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
+              </li>
+          )
+        })
+      }
+      </ul>
+      <div><img style={[styles.logoStyle]} src={process.env.PUBLIC_URL+logo} alt="character" /></div>
+    </div>
   </div>
 )
 
