@@ -10,7 +10,8 @@ const styles = {
     fontWeight: 'bold'
   },
   quoteMark: {
-    fontSize: '130px',
+    fontSize: '150px',
+    fontWeight: '800',
     margin: 0,
     fontFamily: "'Archivo Black', sans-serif",
     color: colors.blue,
@@ -19,16 +20,18 @@ const styles = {
     width: '10%'
   },
   words: {
+    fontFamily: "'Comfortaa', cursive",
     display: 'inline',
-    fontFamily: 'Helvetica Neue',
-    fontSize: '25px',
+    fontStyle: 'light',
+    fontWeight: '400',
+    fontSize: '28px',
+    lineHeight: '40px',
     color: colors.gray,
     display: 'inline',
     float: 'left',
     width: '90%'
   },
   author:{
-    fontFamily: 'Arial',
     float: 'right',
     color: colors.red,
     fontSize: '25px'
@@ -36,14 +39,20 @@ const styles = {
   center: {
     margin: '60px auto',
     width: '85%'
+  },
+  highlight: {
+    fontFamily: 'sans-serif',
+    fontWeight: 'bold',
+    fontSize: '28px',
+    color: '#484848'
   }
 };
 
-const QuoteWords = ({ words, person, title }) => (
+const QuoteWords = ({ person, title }) => (
   <div style={[styles.center]}>
     <div>
       <p style={[styles.quoteMark]}>&ldquo;</p>
-      <p style={[styles.words]}>{words}</p>
+      <p style={[styles.words]}>Founded in 2002, ChinaFriends is dedicated to bringing the <span style={[styles.highlight]}>best Chinese language and culture education</span> to the City of Chicago.</p>
     </div>
     <p style={[styles.author]}>- <span style={[styles.bold]}>{person}</span> {title}</p>
   </div>

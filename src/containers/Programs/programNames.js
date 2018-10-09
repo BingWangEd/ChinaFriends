@@ -9,7 +9,7 @@ const styles = {
   programGrid: {
     display: 'inline',
     float: 'left',
-    width: '36%'
+    width: '40%'
   },
   center: {
     margin: '60px auto',
@@ -20,7 +20,6 @@ const styles = {
 const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unselectProgram, setProgramImage, unsetProgramImage }) => (
   <div style={[styles.center]}>
     <div style={[styles.programGrid]}>
-      <div>
         <ProgramButton 
           title="Language"
           id={programs["Language"].id}
@@ -44,8 +43,6 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
           setProgramImage={setProgramImage}
           unsetProgramImage={unsetProgramImage}
         />
-      </div>
-      <div>
         <ProgramButton 
           title="AfterSchool"
           id={programs["AfterSchool"].id}
@@ -70,7 +67,6 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
           setProgramImage={setProgramImage}
           unsetProgramImage={unsetProgramImage}
         />
-      </div>
     </div>
     <div style={[styles.inlineBlock]}>
       <ProgramImageDisplay programImage={programImage} />

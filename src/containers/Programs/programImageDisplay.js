@@ -4,8 +4,8 @@ import {colors} from '../../helpers';
 
 const styles = {
   div: {
-    width: '64%',
-    height: '400px',
+    width: '60%',
+    height: '440px',
     position: 'relative',
     overflow: 'hidden'
   },

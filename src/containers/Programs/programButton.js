@@ -7,23 +7,24 @@ const styles = {
   grid: {
     width: '50%',
     textAlign: 'center',
-    height: '200px',
+    height: '220px',
     position: 'relative',
-    display: 'inline-block'
+    display: 'inline-block',
+    cursor: 'pointer'
   },
   line: {
     width: '50%',
-    borderTopWidth: '1px',
+    borderTopWidth: '2px',
     borderTopStyle: 'solid',
-    borderTopColor: colors.blue,
+    borderTopColor: colors.yellow,
     position: 'absolute',
     left: '25%',
     transition: 'all 0.8s'
   },
   title: {
-    color: colors.yellow,
-    margin: 0,
-    paddingTop: '15%'
+    color: 'white',
+    fontFamily: "'Comfortaa', cursive",
+    transition: 'all 0.8s'
   },
   list: {
     listStyleType: 'none',
@@ -31,6 +32,9 @@ const styles = {
     textAlign: 'left',
     marginTop: 0,
     marginBottom: 0
+  },
+  item: {
+    color: 'white'
   }
 };
 
@@ -40,17 +44,18 @@ const ProgramButton = ({ title, id, ifSelected, description, imgSrc, selectProgr
   <div 
     onMouseEnter={()=>{setProgramImage(imgSrc); selectProgram(title) }}
     onMouseLeave={()=>{unselectProgram()}}
-    style={[styles.grid, {background: id%2.0===0 ? colors.red : colors.gray}]}
+    style={[styles.grid, {background: id%2.0===0 ? colors.blue : colors.lightBlue}]}
     className={title} 
   >
-    <h3 id={title+'Title'} style={[styles.title]}>{title}</h3>
+    <h3 style={[styles.title, {marginTop: '15%', opacity: ifSelected ? '1' : '0'}]} className="Title">{title}</h3>
+    <h3 style={[styles.title, {marginTop: '35%', opacity: ifSelected ? '0' : '1'}]} className="Title">{title}</h3>
     <div style={[styles.line, {top: ifSelected ? '28%' : '60%', opacity: ifSelected ? '1' : '0' }]}>
       <ul style={[styles.list]}>
         {
         description.map((item, index)=>{
           return (
               <li key={index}>
-                <p>{item}</p>
+                <p style={[styles.item]}>{item}</p>
               </li>
           )
         })

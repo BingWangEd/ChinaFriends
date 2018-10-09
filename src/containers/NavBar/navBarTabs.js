@@ -21,7 +21,8 @@ const styles = {
   },
   listStyle: {
     listStyleType: 'none',
-    display: 'inline'
+    display: 'inline',
+    cursor: 'pointer'
   },
   linkStyle: {
     width: '500px',
@@ -29,7 +30,7 @@ const styles = {
     paddingRight: '16px',
     textAlign: 'center',
     color: colors.gray,
-    fontFamily: 'Helvetica Neue',
+    fontFamily: "'Comfortaa', cursive",
   },
   tabStyle: {
     display: 'inline-block',

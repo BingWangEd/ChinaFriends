@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import BannerView from './bannerView';
+import {team} from '../../helpers';
+import TeamSection from './teamSection';
 
-class Banner extends Component {
+class Team extends Component {
   render(){
-    const imgSrc = "/Images/Front.jpg"
     return (
-      <BannerView imgSrc = {imgSrc} />
+        <div>
+        <TeamSection 
+          team={team} />
+        </div>
     )
   }
 }
@@ -17,4 +20,4 @@ function mapStateToProps(state){
 
 export default connect(
   mapStateToProps
-)(Banner)
+)(Team)
