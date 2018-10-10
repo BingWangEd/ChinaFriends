@@ -69,7 +69,10 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
         />
     </div>
     <div style={[styles.inlineBlock]}>
-      <ProgramImageDisplay programImage={programImage} />
+      <ProgramImageDisplay 
+        programImage={programImage} 
+        description={currProgram ? programs[currProgram].description : null}
+      />
     </div>
   </div>
 )
