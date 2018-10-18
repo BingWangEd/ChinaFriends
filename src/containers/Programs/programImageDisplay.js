@@ -22,12 +22,12 @@ const styles = {
     listStyleType: 'none'
   },
   item: {
-    color: 'white',
+    color: colors.yellow,
     fontSize: '25pt'
   },
   banner: {
     padding: '20px',
-    background: 'rgba(0, 0, 0, 0.3)',
+    background: 'rgba(255, 255, 255, 0.7)',
     width: '250px',
     margin: 'auto'
   }

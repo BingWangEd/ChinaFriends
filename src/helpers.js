@@ -8,22 +8,37 @@ export const sections = {
 export const programs = {
   "Language": {
     "id": 1,
-    "description": ["Group", "Online", "One-on-one"],
+    "items": {
+      "Group": "Our interactive small group lessons provide fun yet solid language training for both children and adults to practice the language in context.", 
+      "One-on-one": "Our individual lessons offers the most personalized Chinese learning experience centered around your needs.",
+      "Online": "Our remote lessons allow you to practice Chinese with a native speaker wherever you are in the world.",
+      "Heritage": "Our heritage program is tailored towards heritage speakers's particular needs. The program adopts \"Heritage Chinese\", a teaching series designed to support learners with exposure to Chinese at home."},
+    "description": "Learn Chinese with native speakers online or in person",
     "imgSrc": "Images/Language.jpg"
   },
   "Culture": {
     "id": 2,
-    "description": ["Dance", "Art craft", "Tradition"],
+    "items": {
+      "Dance": "Our dance program teaches different Chinese folk dance styles including fan, ribbon, and drum dance. You will learn from professionally-trained teachers a variety of techniques in Chinese folk dance.", 
+      "Art craft": "Our art craft projects combines culture with language education through handson experiences.", 
+      "Callligraphy": "Our calligraphy courses offer you a great opportunity to learn Chinese characters through this ancient aesthetically pleasing art form that turns writing into visual arts."},
+    "description": "Enjoy fun and authentic cultural classes with experts from China",
     "imgSrc": "Images/Culture.jpg"
   },
   "Trip": {
     "id": 3,
-    "description": ["Summer camp", "Personalized trip to China"],
+    "items": {
+      "Summer camp": "Every summer, we offer Chinese workshops and courses in the City of Chicago for both children from Chicago that want to learn Chinese and for children from China that want to learn English in a major city in the U.S.", 
+      "Personalized trip to China": "We have over 10 years of experience helping people get the Chinese language and culture education they want through travels to Chinese-speaking countries."},
+    "description": "Adventure into a journey in China, Taiwan, or Hong Kong with itinerary tailored around your needs and interest",
     "imgSrc": "Images/Trip.jpg"
   },
   "AfterSchool": {
     "id": 4,
-    "description": ["Language", "Culture", "Art"],
+    "items": {
+      "Partner-Schools": "We work with multiple partner schools in the City of Chicago to help enrich students' after school life with courses varying from rigourous language teaching to creative Chinese culture projects." 
+    },
+    "description": "Immerse in the Chinese language and culture at an after school program at one of our partner schools",
     "imgSrc": "Images/AfterSchool.jpg"
   }
 }
@@ -35,6 +50,7 @@ export const colors = {
   "yellow": "#FFF201",
   "lightRed": "#F99CBF",
   "lightBlue": "#73D5FE",
+  "lightYellow": '#FEF99B'
 }
 
 export const team = [

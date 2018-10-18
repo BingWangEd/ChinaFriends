@@ -57,7 +57,7 @@ const NavBarTabs = ({ tabs, handleSelectSection, logo }) => (
           const classStyleNames = 'tab '+ colorList[tabs[key]-1]
           return (
               <li style={[styles.listStyle]} key={tabs[key]}>
-                <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(tabs[key])}}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
+                <a href="#Contact" style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(tabs[key])}}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
               </li>
           )
         })

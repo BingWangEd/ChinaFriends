@@ -5,7 +5,7 @@ import {contacts} from '../../helpers';
 class Contacts extends Component {
   render() {
     return (
-      <div>
+      <div id='Contact'>
         <ContactForm contactsInfo = {contacts} />
       </div>
     );

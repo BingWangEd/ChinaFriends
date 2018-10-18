@@ -7,7 +7,7 @@ import ProgramFlags from './programsContainer';
 class Programs extends Component {
   render(){
     return (
-      <div className='program'>
+      <div id='program'>
         <ProgramFlags 
         programs={programs} 
         handleSelectProgram={this.props.selectProgram} 

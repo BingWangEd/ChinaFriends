@@ -71,7 +71,7 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
     <div style={[styles.inlineBlock]}>
       <ProgramImageDisplay 
         programImage={programImage} 
-        description={currProgram ? programs[currProgram].description : null}
+        items={currProgram ? programs[currProgram].items : null}
       />
     </div>
   </div>

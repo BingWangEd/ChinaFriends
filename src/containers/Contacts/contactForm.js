@@ -4,18 +4,54 @@ import {colors} from '../../helpers';
 
 const styles = {
   center: {
-    margin: '60px auto',
-    width: '85%',
-    textAlign: 'center'
+    margin: '60px auto 0 auto',
+    width: 'inherit',
+    textAlign: 'center',
+    // background: 'radial-gradient(circle closest-corner at 50% 50%, '+ colors.lightYellow +',' + colors.yellow + ')',
+    padding: '100px'
+  },
+  arrowDown: {
+    width: 0,
+    height: 0, 
+    borderLeft: '40px solid transparent',
+    borderRight: '40px solid transparent',
+    borderTop: '40px solid white',
+    position: 'absolute',
+    top: 0,
+    left: '50%',
+    transform: 'translateX(-40px)'
+  },
+  backgroundImage: {
+    minHeight: '500px',
+    backgroundImage: "url('images/ContactBackground.jpg')",
+    backgroundAttachment: 'fixed',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    position: 'relative'
+  },
+  banner: {
+    padding: '20px',
+    background: 'rgba(255, 255, 255, 0.7)',
+    width: '450px',
+    minHeight: '400px',
+    margin: 'auto'
   }
 };
 
 const ContactForm = ({ contactsInfo }) => (
-  <div style={[styles.center]}>
-    <h2>Get in Touch! We would love to hear from you.</h2>
-    <h3>{contactsInfo.phone}</h3>
-    <h3><a href={"mailto: "+contactsInfo.email}>{contactsInfo.email}</a></h3>
-    <h3>Wednesday Class Location: {contactsInfo.WedClassLocation}</h3>
+  <div style={[styles.backgroundImage, styles.center]}>
+    <div style={[styles.arrowDown]}></div>
+    <div style={[styles.banner]}>
+      <h1 style={[{fontFamily: "'Comfortaa', cursive", fontSize: '33pt'}]}>Get in Touch!</h1>
+      <h2>{contactsInfo.phone}</h2>
+      <h2><a href={"mailto: "+contactsInfo.email}>{contactsInfo.email}</a></h2>
+      <h2>Wednesday Class Location:</h2>
+      <p>{contactsInfo.WedClassLocation}</p>
+    </div>
   </div>
 )
 
