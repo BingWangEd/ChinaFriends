@@ -37,7 +37,7 @@ const styles = {
     padding: '20px',
     background: 'rgba(255, 255, 255, 0.7)',
     width: '450px',
-    minHeight: '400px',
+    minHeight: '450px',
     margin: 'auto'
   }
 };

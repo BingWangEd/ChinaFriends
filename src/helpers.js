@@ -1,6 +1,6 @@
 export const sections = {
-  "About": 1,
-  "Program": 2,
+  "Home": 1,
+  "Programs": 2,
   "Team": 3,
   "Contact": 4
 }
@@ -30,7 +30,7 @@ export const programs = {
     "items": {
       "Summer camp": "Every summer, we offer Chinese workshops and courses in the City of Chicago for both children from Chicago that want to learn Chinese and for children from China that want to learn English in a major city in the U.S.", 
       "Personalized trip to China": "We have over 10 years of experience helping people get the Chinese language and culture education they want through travels to Chinese-speaking countries."},
-    "description": "Adventure into a journey in China, Taiwan, or Hong Kong with itinerary tailored around your needs and interest",
+    "description": "Adventure into a journey in China with itinerary tailored around your needs and interest",
     "imgSrc": "Images/Trip.jpg"
   },
   "AfterSchool": {
@@ -83,12 +83,6 @@ export const team = [
   "LastName": "Sun",
   "Title": "Dance Intructor",
   "Description": "Jelly majored in dance and choreography at the Northeast Normal University. She is a dance instructor in Guangdong Province and was actively involved in the dance competitions and charity events organized and sponsored by China Central Television(CCTV) and other major TV Broadcasting Stations."
-},
-{
-  "FirstName": "Jasmine",
-  "LastName": "Cheng",
-  "Title": "Teacher",
-  "Description": "Jasmine grew up in China, the U.S. and the U.K. Having lived in a diverse environment, she is able to comprehend and grasp both the culture and language well. She collaborates interactive learning with textbook materials and helps students bridge the culture and language differences between the east and west."
 }
 ]
 

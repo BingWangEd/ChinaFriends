@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {team} from '../../helpers';
 import TeamSection from './teamSection';
+import TeamBannerView from './teamImageBanner';
 
 class Team extends Component {
   render(){
     return (
         <div>
-        <TeamSection 
-          team={team} />
+          <TeamBannerView />
+          <TeamSection team={team} />
         </div>
     )
   }

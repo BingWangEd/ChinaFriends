@@ -108,17 +108,6 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
           />
         </div>
       </div>
-      <div style={[styles.animation]}>
-      {
-        currProgram ? (
-            <ProgramImageDisplay 
-            programImage={programImage} 
-            items={programs[currProgram].items}
-            currNum={currNum}
-          />
-        ) : null
-      }
-      </div>
     </div>
   )
 }

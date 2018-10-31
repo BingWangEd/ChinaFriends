@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import Radium from 'radium';
-import individualProfile from './individualProfile';
 import './teamStyle.css'
 import {colors} from '../../helpers';
 
 const styles = {
   center: {
     margin: 'auto',
-    width: '85%'
+    width: '85%',
+    paddingTop: '60px'
   },
   container:{
-    width: '33.33%',
+    width: '33%',
     float: 'left'
   },
   column: {
@@ -24,7 +24,8 @@ const styles = {
     width: '100%'
   },
   nameStyle: {
-    color: colors.red
+    color: colors.blue,
+    fontFamily: "'Comfortaa', cursive"
   },
   titleStyle: {
     color: colors.gray,
@@ -49,8 +50,8 @@ const TeamSection = ({ team }) => (
           <div style={[styles.container]}>
             <div key={index} style={[styles.column]}>
               <img style={[styles.image]} src={process.env.PUBLIC_URL+imgSrc} alt="person image" />
-              <h2 style={[styles.nameStyle]}>{name}</h2>
-              <h5 style={[styles.titleStyle]}>{title}</h5>
+              <h1 style={[styles.nameStyle]}>{name}</h1>
+              <h3 style={[styles.titleStyle]}>{title}</h3>
               <p style={[styles.descriptionStyle]}>{description}</p>
             </div>
           </div>

@@ -22,6 +22,22 @@ const styles = {
     margin: '20px',
     textAlign: 'left',
     color: colors.gray
+  },
+  button: {
+    borderRadius: '4px',
+    border: 'none',
+    padding: '10px',
+    textAlign: 'center',
+    textDecoration: 'none',
+    margin: '4px 2px',
+    color: 'white',
+    backgroundColor: colors.red,
+    fontFamily: "'Comfortaa', cursive",
+    width: '80%',
+    position: 'absolute',
+    bottom: '10px',
+    left: '10%',
+    cursor: 'pointer'
   }
 };
 
@@ -30,10 +46,12 @@ const colorList = Object.keys(colors)
 const ProgramButton = ({ title, id, ifSelected, description, imgSrc, selectProgram, unselectProgram, setProgramImage, unsetProgramImage }) => (
   <div style={[styles.grid, {backgroundColor: ifSelected ? colors.yellow : '#F8F8F8'}]}
     onMouseEnter={()=>{setProgramImage(imgSrc); selectProgram(title) }}
+    onMouseLeave={()=>{unselectProgram() }}
   >
     <img src={process.env.PUBLIC_URL+'icons/'+title+'.png'} alt="icon" />
     <h2 style={[styles.title]}>{title}</h2>
-    <p style={[styles.description]}>{description}</p>
+    <p style={[styles.description, {color: ifSelected ? 'black' : colors.gray}]}>{description}</p>
+    <button style={[styles.button, {opacity: ifSelected ? '1' : '0'}]}>Click to Know More</button>
   </div>
 )
 
