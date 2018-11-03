@@ -1,9 +1,15 @@
 let reducer = function (state, action){
   switch (action.type){
     case 'SELECT_SECTION':
-      return Object.assign({}, state, {
-        selected_section: action.section_number
-      })
+      if (action.section === 'Programs'){
+        return Object.assign({}, state, {
+          selected_section: action.section
+        })
+      } else {
+        return Object.assign({}, state, {
+          selected_section: action.section
+        })
+      }
     case 'SELECT_PROGRAM':
     case 'UNSELECT_PROGRAM':
       return Object.assign({}, state, {

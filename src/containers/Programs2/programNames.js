@@ -31,7 +31,7 @@ const styles = {
   }
 };
 
-const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unselectProgram, setProgramImage, unsetProgramImage }) => {
+const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unselectProgram, setProgramImage, unsetProgramImage, selectSection }) => {
   let currNum = null;
   switch (currProgram) {
             case 'Language':
@@ -63,6 +63,7 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
             unselectProgram={unselectProgram}
             setProgramImage={setProgramImage}
             unsetProgramImage={unsetProgramImage}
+            selectSection={selectSection}
           />
         </div>
         <div style={[styles.programGrid, styles.centerMargin]}>
@@ -77,6 +78,7 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
             unselectProgram={unselectProgram}
             setProgramImage={setProgramImage}
             unsetProgramImage={unsetProgramImage}
+            selectSection={selectSection}
           />
         </div>
         <div style={[styles.programGrid, styles.centerMargin]}>
@@ -91,6 +93,7 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
             unselectProgram={unselectProgram}
             setProgramImage={setProgramImage}
             unsetProgramImage={unsetProgramImage}
+            selectSection={selectSection}
           />
         </div>
         <div style={[styles.programGrid, styles.rightMargin]}>
@@ -105,6 +108,7 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
             unselectProgram={unselectProgram}
             setProgramImage={setProgramImage}
             unsetProgramImage={unsetProgramImage}
+            selectSection={selectSection}
           />
         </div>
       </div>

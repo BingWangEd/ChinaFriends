@@ -5,12 +5,18 @@ import {sections} from '../../helpers';
 import NavBarTabs from './navBarTabs';
 
 class NavBar extends Component {
+  handleScrollToPosition = (e, position) => {
+    e.preventDefault();
+    window.scrollTo({top: position, left: 0, behavior: 'smooth'});
+  }
+
   render(){
     return (
         <NavBarTabs 
           tabs={sections} 
           handleSelectSection={this.props.selectSection} 
           logo="/ChinaFriendsLogo.jpg"
+          scrollToPosition={this.handleScrollToPosition}
         />
     )
   }

@@ -10,7 +10,7 @@ const ProgramSection = ({programs}) => (
     Object.keys(programs).map((program, index)=>{
       return (
         <div key={index}>
-          <ProgramDisplay programImage={programs[program].imgSrc} items={programs[program].items} />
+          <ProgramDisplay programImage={programs[program].imgSrc} items={programs[program].items} title={program}/>
         </div>
       )
     })

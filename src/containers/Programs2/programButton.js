@@ -43,15 +43,14 @@ const styles = {
 
 const colorList = Object.keys(colors)
 
-const ProgramButton = ({ title, id, ifSelected, description, imgSrc, selectProgram, unselectProgram, setProgramImage, unsetProgramImage }) => (
+const ProgramButton = ({ title, id, ifSelected, description, imgSrc, selectProgram, unselectProgram, setProgramImage, unsetProgramImage, selectSection }) => (
   <div style={[styles.grid, {backgroundColor: ifSelected ? colors.yellow : '#F8F8F8'}]}
     onMouseEnter={()=>{setProgramImage(imgSrc); selectProgram(title) }}
-    onMouseLeave={()=>{unselectProgram() }}
   >
     <img src={process.env.PUBLIC_URL+'icons/'+title+'.png'} alt="icon" />
     <h2 style={[styles.title]}>{title}</h2>
     <p style={[styles.description, {color: ifSelected ? 'black' : colors.gray}]}>{description}</p>
-    <button style={[styles.button, {opacity: ifSelected ? '1' : '0'}]}>Click to Know More</button>
+    <button onClick={()=>{ selectSection('Programs') }} style={[styles.button, {opacity: ifSelected ? '1' : '0'}]}>Click to Know More</button>
   </div>
 )
 

@@ -9,16 +9,8 @@ const styles = {
     width: '85%',
     paddingTop: '60px'
   },
-  wrapper: {
-    width: '96%',
-    minHeight: '400px',
-    padding: '2%',
-    position: 'relative',
-    top: '40px',
-    transition: 'all 0.8s'
-  },
   imageDiv: {
-    width: '60%',
+    width: '40%',
     overflow: 'hidden',
     minHeight: '420px',
     transition: 'all 0.8s',
@@ -32,7 +24,7 @@ const styles = {
     backgroundPosition: 'center'
   },
   list: {
-    width: '33%',
+    width: '50%',
     listStyleType: 'none',
     marginLeft: '1%',
     float: 'left',
@@ -57,9 +49,9 @@ const styles = {
 
 const colorList = Object.keys(colors)
 
-const ProgramDisplay = ({ programImage, items }) => {
+const ProgramDisplay = ({ programImage, items, title }) => {
   const itemsBox =  
-    (<ul style={[styles.list, styles.center]}>
+    (<ul style={[styles.list]}>
       {
         Object.keys(items).map((item, index)=>{
           return (
@@ -71,11 +63,14 @@ const ProgramDisplay = ({ programImage, items }) => {
       })}
     </ul>)
   return (
-    <div style={[styles.wrapper]} className='clearfix'>
-      <div className='clearfix' style={[styles.imageDiv, {backgroundImage: "url('"+ process.env.PUBLIC_URL+programImage +"')"}]}>
-      </div>
+    <div style={[styles.center]} className='clearfix'>
+      <h1>{title}</h1>
       <div>
-        {itemsBox}
+        <div className='clearfix' style={[styles.imageDiv, {backgroundImage: "url('"+ process.env.PUBLIC_URL+programImage +"')"}]}>
+        </div>
+        <div>
+          {itemsBox}
+        </div>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
-export const selectSection = (num) => {
+export const selectSection = (section) => {
   return {
     type: 'SELECT_SECTION',
-    section_number: num
+    section
   }
 }
 

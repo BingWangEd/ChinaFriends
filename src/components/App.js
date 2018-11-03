@@ -8,16 +8,21 @@ import Team from '../containers/Team/index';
 import ProgramDetail from '../containers/ProgramDetails/index';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+  }
+
   render() {
     switch(this.props.selected_section){
-      case 3:
+      case 'Team':
         return (
           <div>
             <NavBar />
             <Team />
           </div>
         )
-      case 2:
+      case 'Programs':
         return (
           <div>
             <NavBar />
@@ -30,7 +35,7 @@ class App extends Component {
           <NavBar />
           <About />
           <Programs />
-          <Contacts />
+          <Contacts ref={this.myRef} />
         </div>
       );
     }
