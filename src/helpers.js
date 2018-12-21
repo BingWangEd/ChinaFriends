@@ -92,3 +92,107 @@ export const contacts = {
   "WedClassLocation": "1535 N Dayton, Chicago, IL 60642"
 }
 
+export const schedules = [
+  {
+    "className": "Toddlers 13mo-3yo",
+    "intro": "A 50-minute session for children (18 mo to 3 years) to attend with their parents or caregivers. Adults learn a new language alongside their children! At this young age, your child will learn to discriminate sounds and tones through exposure to Chinese stories, music & movement, and games.",
+    "schedule": [
+      { "Day": "Saturday",
+        "Time": "10:00 am-10:50 am"
+      }
+    ]
+  },
+  {
+    "className": "Playground 3-5yo",
+    "intro": "Mandarin playgroup for preschoolers is our most effective learning program for young children. Language skills are absorbed through music, story telling, and play.",
+    "schedule": [
+      { "Day": "Monday-Friday",
+        "Time": "9:00 am-12:00 pm"
+      }
+    ]
+  },
+  {
+    "className": "3-5yo",
+    "intro": "These are a 80-minute drop-off class for children between 3 and 5 years old. Children are immersed in a relaxed and fun atmosphere with our native Mandarin teacher in a small group and learn Mandarin naturally through stories, music & movement, games, images and art activities. Common word and phrases using colors, shapes, numbers, foods, animals, people/family, etc. are introduced in Chinese.",
+    "schedule": [
+      { "Day": "Monday-Friday",
+        "Time": "1:00 am-4:00 pm"
+      },
+      { "Day": "Saturday",
+        "Time": "8:30 am-9:50 am"
+      },
+      { "Day": "Sunday",
+        "Time": "9:00 am-10:20 am, 10:30 am-11:50 am"
+      }
+    ]
+  },
+  {
+    "className": "6-7yo Introduction",
+    "intro": "These are a 80 minute drop-off class for children entering K-2nd grade. Children will learn word, phrase and sentences units through everyday conversational Chinese and is taught through contextual and theme-based songs, games, movements, poems and role playing. We introduce Mandarin tones (pinyin), visual identification of characters, emphasize understanding simple commands and responses in simple Chinese phrases. This class is offered in Beginner (little or no prior experience) and Intermediate levels (at least 2 prior years of Mandarin instruction).",
+    "schedule": [
+      { "Day": "Monday-Wednesday, Friday",
+        "Time": "4:15 pm-5:35 pm"
+      },
+      { "Day": "Saturday",
+        "Time": "8:30 am-9:50 am"
+      },
+      { "Day": "Sunday",
+        "Time": "10:30 am-11:50 am"
+      }
+    ]
+  },
+  {
+    "className": "Beginner 1",
+    "intro": "These are 80 minute drop-off class for children entering 3rd-8th grade. At this level, your child will continue working through thematic instruction of the curriculum and be introduced to radicals and writing Chinese characters. We emphasize answering responses in complete and full sentences.",
+    "schedule": [
+      { "Day": "Monday-Wednesday, Friday",
+        "Time": "4:15 pm-5:35pm"
+      },
+      { "Day": "Saturday",
+        "Time": "10:00 am-11:20 am"
+      },
+      { "Day": "Sunday",
+        "Time": "9:00 am-10:20 am, 10:30 am-11:50 am"
+      }
+    ]
+  },
+  {
+    "className": "Beginner 2",
+    "intro": "These are 80 minute drop-off class for children who would like to further improve their Chinese through games and activities.",
+    "schedule": [
+      { "Day": "Monday-Wednesday, Friday",
+        "Time": "4:15 pm-5:35pm"
+      },
+      { "Day": "Sunday",
+        "Time": "9:00 am-10:20 am, 10:30 am-11:50 am"
+      }
+    ]
+  },
+  {
+    "className": "Chinese Dance Class",
+    "intro": "intro missing",
+    "schedule": [
+      { "Day": "Sunday",
+        "Time": "12:00 pm-1:00 pm"
+      }
+    ]
+  },
+  {
+    "className": "Intermediate 1",
+    "intro": "intro missing",
+    "schedule": [
+      { "Day": "Sunday",
+        "Time": "10:30 am-11:50 am"
+      }
+    ]
+  },
+  {
+    "className": "Intermediate 2",
+    "intro": "intro missing",
+    "schedule": [
+      { "Day": "Sunday",
+        "Time": "9:00 am-10:20 am"
+      }
+    ]
+  }
+]

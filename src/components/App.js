@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import NavBar from '../containers/NavBar/navBarTabsContainer';
 import About from '../containers/About/index';
-import Programs from '../containers/Programs2';
+import Programs from '../containers/Programs';
 import Contacts from '../containers/Contacts/index';
 import Team from '../containers/Team/index';
 import ProgramDetail from '../containers/ProgramDetails/index';
+import Schedule from '../containers/Schedule/index';
 
 class App extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class App extends Component {
           <About />
           <Programs />
           <Contacts ref={this.myRef} />
+          <Schedule />
         </div>
       );
     }

@@ -39,3 +39,17 @@ export const unsetProgramImage = () => {
     imgSrc: 'Images/ProgramFront.jpg'
   }
 }
+
+export const addScheduleIntroDisplay = (index) => {
+  return {
+    type: 'ADD_SCHEDULE_INTRO_DISPLAY',
+    index: index
+  }
+}
+
+export const removeScheduleIntroDisplay = (index) => {
+  return {
+    type: 'REMOVE_SCHEDULE_INTRO_DISPLAY',
+    index: index
+  }
+}

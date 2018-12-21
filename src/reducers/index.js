@@ -20,6 +20,14 @@ let reducer = function (state, action){
       return Object.assign({}, state, {
         program_image: action.imgSrc
       })
+    case 'ADD_SCHEDULE_INTRO_DISPLAY':
+      return Object.assign({}, state, {
+        schedule_intro_display: state.schedule_intro_display ? state.schedule_intro_display.push(action.index) : [action.index]
+      })
+    case 'REMOVE_SCHEDULE_INTRO_DISPLAY':
+      return Object.assign({}, state, {
+        schedule_intro_display: state.schedule_intro_display.splice(state.schedule_intro_display.indexOf(action.index), 1)
+      })
     default:
       return state;
   }
