@@ -21,8 +21,9 @@ let reducer = function (state, action){
         program_image: action.imgSrc
       })
     case 'ADD_SCHEDULE_INTRO_DISPLAY':
+      console.log(state.schedule_intro_display)
       return Object.assign({}, state, {
-        schedule_intro_display: state.schedule_intro_display ? state.schedule_intro_display.push(action.index) : [action.index]
+         schedule_intro_display: state.schedule_intro_display ? state.schedule_intro_display.concat([action.index]) : [action.index]
       })
     case 'REMOVE_SCHEDULE_INTRO_DISPLAY':
       return Object.assign({}, state, {

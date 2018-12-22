@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import ProgramSection from './programSection';
-import ProgramBannerView from './programImageBanner';
+import BannerView from '../sessionBanner';
 import {programs} from '../../helpers';
+
 class ProgramDetail extends Component {
   componentDidMount(){
     
@@ -27,7 +28,10 @@ class ProgramDetail extends Component {
   render(){
     return (
         <div>
-          <ProgramBannerView />
+          <BannerView 
+            imgSrc = "images/Experience.jpg"
+            header = "Get a Sneakpeak of the Experiences"
+          />
           <ProgramSection programs={programs} />
         </div>
     )

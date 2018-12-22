@@ -30,6 +30,13 @@ class App extends Component {
             <ProgramDetail />
           </div>
         )
+      case 'Schedule':
+        return (
+          <div>
+            <NavBar />
+            <Schedule />
+          </div>
+        )
       default: 
         return (
         <div>
@@ -37,19 +44,8 @@ class App extends Component {
           <About />
           <Programs />
           <Contacts ref={this.myRef} />
-          <Schedule />
         </div>
       );
-    }
-    if (this.props.selected_section===3) {
-      return (
-        <div>
-          <NavBar />
-          <Team />
-        </div>
-      )
-    } else {
-      
     }
   }
 }

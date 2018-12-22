@@ -1,8 +1,9 @@
 export const sections = {
   "Home": 1,
   "Programs": 2,
-  "Team": 3,
-  "Contact": 4
+  "Schedule": 3,
+  "Team": 4,
+  "Contact": 5
 }
 
 export const programs = {

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Radium from 'radium';
 import {colors} from '../../helpers';
-import TableCell from './tableCell';
+import ClassSchedules from './classSchedules';
 
 const styles = {
   center: {
@@ -24,20 +24,11 @@ class ScheduleTable extends Component {
       <div style={[styles.center]}> 
       {
         schedules.map((eachClass, index)=>{
-            const button = this.props.schedue_intro_display ? <button onClick = {() =>{this.props.removeScheduleIntroDisplay({index})}}>close</button> : <button onClick = {()=> {this.props.addScheduleIntroDisplay({index})}}>read more</button>
-            return (
-              <div key={index}>
-                <h2>{eachClass["className"]}</h2>
-                {button}
-                <table>
-                  <TableCell 
-                    classSchedules = {eachClass["schedule"]} 
-                    className = {eachClass["className"]}
-                    classIntro = {eachClass["intro"]}
-                  />
-                </table>
-              </div>
-            )
+            return (<ClassSchedules 
+              className = {eachClass["className"]}
+              classIntro = {eachClass["intro"]}
+              classSchedules = {eachClass["schedule"]}
+            />)
         })
       }
       </div>

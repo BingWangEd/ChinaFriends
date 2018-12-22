@@ -4,18 +4,16 @@ import {colors} from '../../helpers';
 
 const styles = {
   cellStyle: {
-    
     textAlign: 'left'
   },
   cellFont: {
-    fontWeight: 'normal',
-    color: colors.gray
+    fontWeight: 'normal'
   }
 };
 
 const colorList = Object.keys(colors)
 
-const TableCell = ({ classSchedules, className, classIntro }) => (
+const TableCell = ({ classSchedules }) => (
 
   classSchedules.map((s)=>{
     return (
