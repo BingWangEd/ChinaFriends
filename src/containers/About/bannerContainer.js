@@ -5,8 +5,9 @@ import BannerView from './bannerView';
 class Banner extends Component {
   render(){
     const imgSrc = "/Images/Front.jpg"
+    const chicagoBestImgSrc = "/ChgoMagBestOf.png"
     return (
-      <BannerView imgSrc = {imgSrc} />
+      <BannerView imgSrc = {imgSrc} chicagoBestImgSrc = {chicagoBestImgSrc} />
     )
   }
 }

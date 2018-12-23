@@ -22,18 +22,26 @@ const styles = {
     fontSize: '25pt',
     margin: 'auto',
     height: '380px',
-    lineHeight: '50px'
+    lineHeight: '50px',
+    position: 'relative'
   },
   ChinaFriends: {
     fontSize: '33pt',
     color: 'white',
     fontFamily: "'Comfortaa', cursive"
+  },
+  imageStyle: {
+    width: '130px',
+    position: 'absolute',
+    right: '-20px',
+    top: '-15px'
   }
 };
 
-const BannerView = ({ imgSrc }) => (
+const BannerView = ({ imgSrc, chicagoBestImgSrc }) => (
     <div style={[styles.parallax]}>
       <div style={[styles.banner]}>
+        <div><img style={[styles.imageStyle]} src={process.env.PUBLIC_URL+chicagoBestImgSrc} alt="Chicago best image" /></div>
         <h1>Fun</h1>
         <h1>Friends</h1>
         <h1>Fluency</h1>
