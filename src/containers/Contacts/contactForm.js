@@ -49,7 +49,7 @@ const ContactForm = ({ contactsInfo }) => (
       <h1 style={[{fontFamily: "'Comfortaa', cursive", fontSize: '33pt'}]}>Get in Touch!</h1>
       <h2>{contactsInfo.phone}</h2>
       <h2><a href={"mailto: "+contactsInfo.email}>{contactsInfo.email}</a></h2>
-      <h2>Wednesday Class Location:</h2>
+      <h2>Class Location:</h2>
       <p>{contactsInfo.WedClassLocation}</p>
     </div>
   </div>

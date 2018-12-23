@@ -37,7 +37,7 @@ export const programs = {
   "AfterSchool": {
     "id": 4,
     "items": {
-      "Partner-Schools": "We work with multiple partner schools in the City of Chicago to help enrich students' after school life with courses varying from rigourous language teaching to creative Chinese culture projects." 
+      "Partner-Schools": "We work with multiple partner schools, both private and CPS, in the City of Chicago to help enrich students' after school life with courses varying from rigourous language teaching to creative Chinese culture projects." 
     },
     "description": "Immerse in the Chinese language and culture at an after school program at one of our partner schools",
     "imgSrc": "Images/AfterSchool.jpg"
@@ -68,13 +68,13 @@ export const team = [
   "Description": "Xueting graduated from Shenyang University with a bachelor degree in English. Prior to the U.S., Xueting taught at public k-6 schools in China for many years. She is passionate about teaching, and is proud of being part of the Chinafriends teaching team. She does her best to bring laugh and cheer to her students."
 }, 
 {
-  "FirstName": "Lina",
+  "FirstName": "Lin",
   "LastName": "Wan",
   "Title": "Teacher and Guzheng Instructor",
   "Description": "Lina is from Wuhan. She majors in Mathematics at DePaul University. She is a master in playing the traditional Chinese music instrument Guzheng. She brought lots fun and laugh in the classroom."
 }, 
 {
-  "FirstName": "Alice",
+  "FirstName": "Xiaojing",
   "LastName": "Liu",
   "Title": "Remote Teacher",
   "Description": "Alice is from Weifang, China. She gained her B.A. in Art Design, a Teaching Certificate in Teaching Chinese as a Second Language from Beijing Language and Culture University, and an M.Ed. in Instructional Technology from Southern Illinois Univerisity Edwardsville. She is an expert in using educational technology and enjoys every moment with her students in her classroom."
