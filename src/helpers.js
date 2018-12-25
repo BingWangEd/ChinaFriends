@@ -1,7 +1,7 @@
 export const sections = {
   "Home": 1,
   "Programs": 2,
-  "Schedule": 3,
+  "Schedule & Rate": 3,
   "Team": 4,
   "Contact": 5
 }
@@ -197,3 +197,37 @@ export const schedules = [
     ]
   }
 ]
+
+export const rates = {
+  "Children": {
+    "Length": "18 weeks",
+    "Intro": "Includes all books, class materials, and online support.",
+    "Rate": {
+      "Once/Week": {
+        "50 min": "$570",
+        "80 min": "$715",
+        "Playground": "$1,260"
+      },
+      "Twice/Week": {
+        "50 min": "$1,028",
+        "80 min": "$1,240",
+        "Playground": "$2,142"
+      }
+    }
+  },
+  "Adults": {
+    "Length": "18 weeks",
+    "Intro": "Textbooks purchased separately.",
+    "Rate": {
+      "75 min": "$760",
+      "With Children enrolled at ChinaFriends": "$515"
+    }
+  },
+  "Private": {
+    "Intro": "Adult private rates vary depending on length, frequency, and location of class.  Contact ChinaFriends for details."
+  },
+  "Registration": {
+    "One-time new family registration": "$30",
+    "Sibling discount for each additional child": "$30"
+  }
+}

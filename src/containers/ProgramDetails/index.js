@@ -30,7 +30,7 @@ class ProgramDetail extends Component {
         <div>
           <BannerView 
             imgSrc = "images/Experience.jpg"
-            header = "Get a Sneakpeak of the Experiences"
+            header = "Feel the Experience"
           />
           <ProgramSection programs={programs} />
         </div>

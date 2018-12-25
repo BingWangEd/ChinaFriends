@@ -8,7 +8,7 @@ class Team extends Component {
   render(){
     return (
         <div>
-          <BannerView imgSrc = 'images/Team.jpg' header = 'Meet The Team That Helps Your Kids Grow'
+          <BannerView imgSrc = 'images/Team.jpg' header = 'Meet The Team'
           />
           <TeamSection team={team} />
         </div>

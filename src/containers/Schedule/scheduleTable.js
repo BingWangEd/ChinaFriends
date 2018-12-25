@@ -3,12 +3,13 @@ import {connect} from 'react-redux';
 import Radium from 'radium';
 import {colors} from '../../helpers';
 import ClassSchedules from './classSchedules';
+import HeaderView from '../headerDeco';
 
 const styles = {
   center: {
     margin: 'auto',
     width: '85%',
-    paddingTop: '60px'
+    paddingTop: '80px'
   },
   tableStyle: {
     width: '100%'
@@ -22,6 +23,7 @@ class ScheduleTable extends Component {
     const schedules = this.props.schedules
     return (
       <div style={[styles.center]}> 
+        <HeaderView header = "Schedule" />
       {
         schedules.map((eachClass, index)=>{
             return (<ClassSchedules 

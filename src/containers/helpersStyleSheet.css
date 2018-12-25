@@ -1,0 +1,8 @@
+h1.underline:before {
+  content : "";
+  position: absolute;
+  right    : 0;
+  top  : -28px;
+  width   : 12%;
+  border-top: 6px solid #EB1064;
+}

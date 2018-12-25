@@ -30,7 +30,7 @@ class App extends Component {
             <ProgramDetail />
           </div>
         )
-      case 'Schedule':
+      case 'Schedule & Rate':
         return (
           <div>
             <NavBar />

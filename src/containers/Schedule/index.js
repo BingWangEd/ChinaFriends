@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {addScheduleIntroDisplay, removeScheduleIntroDisplay} from '../../actions/index';
-import {schedules} from '../../helpers';
+import {schedules, rates} from '../../helpers';
 import ScheduleTable from './scheduleTable';
 import BannerView from '../sessionBanner';
+import ClassRates from './classRates';
 
 class Schedule extends Component {
   render(){
@@ -11,7 +12,7 @@ class Schedule extends Component {
       <div>
         <BannerView 
           imgSrc = "images/Schedule.jpg"
-          header = "Course Introduction and Schedule"
+          header = "Find the Right Class"
         />
         <ScheduleTable 
           schedules={schedules}
@@ -19,6 +20,7 @@ class Schedule extends Component {
           addScheduleIntroDisplay = {this.props.addScheduleIntroDisplay}
           removeScheduleIntroDisplay = {this.props.removeScheduleIntroDisplay}
         />
+        <ClassRates rates = {rates} />
       </div>
     )
   }

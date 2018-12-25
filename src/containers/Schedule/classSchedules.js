@@ -10,13 +10,17 @@ const styles = {
   },
   classHeaderStyle: {
     display: 'inline',
-    paddingRight: "15px"
+    paddingRight: "15px",
+    fontFamily: "'Comfortaa', cursive"
   },
   classTitleStyle: {
     marginBottom: "15px"
   },
   classIntroStyle: {
     color: colors.gray
+  },
+  transitionStyle: {
+    transition: "all 5s ease-out"
   }
 };
 
@@ -30,11 +34,11 @@ class ClassSchedules extends Component{
       this.forceUpdate();
     }
     let button = introOpen ? <button onClick = {toggle}>close</button> : <button onClick = {toggle}>read more about the class</button>
-    let intro = introOpen ? <p style={[styles.classIntroStyle]}>{this.props.classIntro}</p> : null
+    let intro = introOpen ? this.props.classIntro : null
     return (
       <div style={[styles.classSectionStyle]}>
         <div style={[styles.classTitleStyle]}><h2 style={[styles.classHeaderStyle]}>{this.props.className}</h2>{button}</div>
-        {intro}
+        <div><p style={[styles.classIntroStyle]}>{intro}</p></div>
         <table>
           <TableCell 
             classSchedules = {this.props.classSchedules}

@@ -30,7 +30,7 @@ const styles = {
     paddingRight: '16px',
     textAlign: 'center',
     color: colors.gray,
-    fontFamily: "'Comfortaa', cursive",
+    fontFamily: "'Comfortaa', cursive"
   },
   tabStyle: {
     display: 'inline-block',

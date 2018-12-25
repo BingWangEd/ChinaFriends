@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {selectSection} from '../../actions/index';
 import {sections} from '../../helpers';
 import NavBarTabs from './navBarTabs';
+import './navBarStyleSheet.css';
 
 class NavBar extends Component {
   handleScrollToPosition = (e, position) => {
