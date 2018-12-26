@@ -15,7 +15,7 @@ const styles = {
   },
   column: {
     padding: '20px',
-    minHeight: '600px',
+    minHeight: '650px',
     textAlign: 'center',
     margin: '10px',
     boxShadow: '0 1px 2px' + colors.gray

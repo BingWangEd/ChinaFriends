@@ -21,6 +21,11 @@ const styles = {
   },
   transitionStyle: {
     transition: "all 5s ease-out"
+  },
+  buttonStyle: {
+    border: "none",
+    color: colors.blue,
+    cursor: 'pointer'
   }
 };
 
@@ -33,7 +38,7 @@ class ClassSchedules extends Component{
       introOpen = !introOpen;
       this.forceUpdate();
     }
-    let button = introOpen ? <button onClick = {toggle}>close</button> : <button onClick = {toggle}>read more about the class</button>
+    let button = introOpen ? <button style={[styles.buttonStyle]} onClick = {toggle}>close</button> : <button style={[styles.buttonStyle]} onClick = {toggle}>read more about the class</button>
     let intro = introOpen ? this.props.classIntro : null
     return (
       <div style={[styles.classSectionStyle]}>

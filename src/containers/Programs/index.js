@@ -5,6 +5,10 @@ import {selectProgram, unselectProgram, setProgramImage, unsetProgramImage, sele
 import ProgramNames from './programNames';
 
 class ProgramFlags extends Component {
+  componentDidMount(){
+    this.props.unselectProgram();
+  }
+
   render(){
     return (
       <ProgramNames 

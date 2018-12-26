@@ -54,7 +54,7 @@ const NavBarTabs = ({ tabs, handleSelectSection, logo, scrollToPosition }) => (
       <ul style={[styles.ulStyle]}>
       {
         Object.keys(tabs).map((key)=>{
-          const classStyleNames = 'tab '+ colorList[tabs[key]-1]
+          const classStyleNames = 'tab '+ colorList[(tabs[key]%5)-1]
           if (key === 'Contact') {
             return (
               <li style={[styles.listStyle]} key={tabs[key]}>

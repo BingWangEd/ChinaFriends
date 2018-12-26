@@ -3,7 +3,8 @@ export const sections = {
   "Programs": 2,
   "Schedule & Rate": 3,
   "Team": 4,
-  "Contact": 5
+  "Calendar": 5,
+  "Contact": 6
 }
 
 export const programs = {
@@ -48,10 +49,7 @@ export const colors = {
   "gray": "#686868",
   "blue": "#0098D7",
   "red": "#EB1064",
-  "yellow": "#FFF201",
-  "lightRed": "#F99CBF",
-  "lightBlue": "#73D5FE",
-  "lightYellow": '#FEF99B'
+  "yellow": "#FFF201"
 }
 
 export const team = [
@@ -230,4 +228,15 @@ export const rates = {
     "One-time new family registration": "$30",
     "Sibling discount for each additional child": "$30"
   }
+}
+
+export const holidays = {
+  "Easter": "Mar.31 - Apr.1",
+  "Memorial Day": "May.26 - 28",
+  "Thanksgiving": "Nov.22 - 25",
+  "Christmas": "Dec.22 - Jan.2"
+}
+
+export const quarters = {
+  "Fall": "Sep.8, Saturday - Jan.27, Sunday 2019"
 }

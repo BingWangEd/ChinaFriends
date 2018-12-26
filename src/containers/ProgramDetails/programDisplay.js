@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import Radium from 'radium';
 import './programStyle.css'
 import {colors} from '../../helpers';
+import HeaderView from '../headerDeco';
 
 const styles = {
   center: {
     margin: 'auto',
     width: '85%',
-    paddingTop: '60px'
+    paddingTop: '80px'
   },
   imageDiv: {
     width: '40%',
@@ -64,7 +65,7 @@ const ProgramDisplay = ({ programImage, items, title }) => {
     </ul>)
   return (
     <div style={[styles.center]} className='clearfix'>
-      <h1>{title}</h1>
+      <HeaderView header = {title} />
       <div>
         <div className='clearfix' style={[styles.imageDiv, {backgroundImage: "url('"+ process.env.PUBLIC_URL+programImage +"')"}]}>
         </div>

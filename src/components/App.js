@@ -7,6 +7,8 @@ import Contacts from '../containers/Contacts/index';
 import Team from '../containers/Team/index';
 import ProgramDetail from '../containers/ProgramDetails/index';
 import Schedule from '../containers/Schedule/index';
+import Calendar from '../containers/Calendar/index';
+import Footer from '../containers/Footer/index';
 
 class App extends Component {
   constructor(props) {
@@ -21,6 +23,7 @@ class App extends Component {
           <div>
             <NavBar />
             <Team />
+            <Footer />
           </div>
         )
       case 'Programs':
@@ -37,6 +40,13 @@ class App extends Component {
             <Schedule />
           </div>
         )
+      case 'Calendar':
+        return (
+          <div>
+            <NavBar />
+            <Calendar />
+          </div>
+        )
       default: 
         return (
         <div>
@@ -44,6 +54,7 @@ class App extends Component {
           <About />
           <Programs />
           <Contacts ref={this.myRef} />
+          <Footer />
         </div>
       );
     }
