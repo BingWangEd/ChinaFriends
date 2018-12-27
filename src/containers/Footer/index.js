@@ -10,7 +10,8 @@ const styles = {
     display: 'inline-block',
     textAlign: 'left',
     color: 'white',
-    marginLeft: '2.5%'
+    marginLeft: '2.5%',
+    fontFamily: "'Comfortaa', cursive"
   },
   rightSectionStyle: {
     float: 'right',
@@ -29,9 +30,11 @@ const styles = {
 class Footer extends Component {
   render() {
     return (
-      <section style={[styles.center]}>
-        <div style={[styles.leftSectionStyle]}><p>Empowering students with new language skills</p></div>
-        <div style={[styles.rightSectionStyle]}><p>| Copyright © 2004-2019 ChinaFriends Inc.</p></div>
+      <section>
+        <div style={[styles.center]}>
+          <div style={[styles.leftSectionStyle]}><p>Empowering students with new language skills</p></div>
+          <div style={[styles.rightSectionStyle]}><p>Site icons by <a href="https://icons8.com/color-icons">Icons8</a> | Copyright © 2004-2019 ChinaFriends Inc.</p></div>
+        </div>
       </section>
     );
   }

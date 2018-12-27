@@ -58,7 +58,7 @@ const NavBarTabs = ({ tabs, handleSelectSection, logo, scrollToPosition }) => (
           if (key === 'Contact') {
             return (
               <li style={[styles.listStyle]} key={tabs[key]}>
-                <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); scrollToPosition(e, 4000) }}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
+                <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); scrollToPosition(e, 1317) }}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
               </li>
             )
           } else {
