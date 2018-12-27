@@ -6,7 +6,7 @@ import './navBarStyleSheet.css';
 const styles = {
   headerStyle: {
     height: '60px',
-    position: '-webkit-sticky', 
+    position: 'webkitSticky', 
     position: 'sticky',
     top: 0,
     background: 'white',
@@ -14,9 +14,8 @@ const styles = {
   },
   ulStyle: {
     position: 'absolute',
-    bottom: 0,
     float: 'left',
-    marginBottom: '10px',
+    marginTop: '30px',
     paddingLeft: 0
   },
   listStyle: {

@@ -25,7 +25,8 @@ const styles = {
   buttonStyle: {
     border: "none",
     color: colors.blue,
-    cursor: 'pointer'
+    cursor: 'pointer',
+    backgroundColor: 'white'
   }
 };
 

@@ -39,6 +39,10 @@ const styles = {
     width: '450px',
     minHeight: '450px',
     margin: 'auto'
+  },
+  infoStyle: {
+    fontFamily: "'Comfortaa', cursive",
+    fontStyle: 'normal'
   }
 };
 
@@ -46,11 +50,11 @@ const ContactForm = ({ contactsInfo }) => (
   <div style={[styles.backgroundImage, styles.center]}>
     <div style={[styles.arrowDown]}></div>
     <div style={[styles.banner]}>
-      <h1 style={[{fontFamily: "'Comfortaa', cursive", fontSize: '33pt'}]}>Get in Touch!</h1>
-      <h2>{contactsInfo.phone}</h2>
-      <h2><a href={"mailto: "+contactsInfo.email}>{contactsInfo.email}</a></h2>
+      <h1 style={[{fontSize: '33pt'}]}>Get in Touch!</h1>
+      <h2 style={[styles.infoStyle]}>{contactsInfo.phone}</h2>
+      <h2 style={[styles.infoStyle]}><a href={"mailto: "+contactsInfo.email}>{contactsInfo.email}</a></h2>
       <h2>Class Location:</h2>
-      <p>{contactsInfo.WedClassLocation}</p>
+      <h2 style={[styles.infoStyle]}>{contactsInfo.WedClassLocation}</h2>
     </div>
   </div>
 )

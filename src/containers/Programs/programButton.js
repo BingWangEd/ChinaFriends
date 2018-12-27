@@ -10,7 +10,6 @@ const styles = {
     height: '320px',
     position: 'relative',
     display: 'inline-block',
-    cursor: 'pointer',
     // boxShadow: '0 1px 2px' + colors.gray,
     paddingTop: '40px'
   },
