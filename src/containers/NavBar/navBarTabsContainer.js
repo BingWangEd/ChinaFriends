@@ -5,6 +5,7 @@ import {sections} from '../../helpers';
 import NavBarTabs from './navBarTabs';
 import './navBarStyleSheet.css';
 
+
 class NavBar extends Component {
   handleScrollToPosition = (e, position) => {
     e.preventDefault();

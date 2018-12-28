@@ -4,6 +4,7 @@ import NavBar from '../containers/NavBar/navBarTabsContainer';
 import MainContent from '../containers/home';
 import FacebookIcon from '../containers/facebookIcon';
 import Footer from '../containers/Footer/index';
+import Radium, {StyleRoot} from 'radium';
 
 class App extends Component {
   constructor(props) {
@@ -13,13 +14,14 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        
-        <NavBar />
-        <FacebookIcon />
-        <MainContent />
-        <Footer />
-      </div>
+      <StyleRoot>
+        <div>
+          <NavBar />
+          <FacebookIcon />
+          <MainContent />
+          <Footer />
+        </div>
+      </StyleRoot>
     )
   }
 }
@@ -30,4 +32,4 @@ function mapStateToProps(state){
 
 export default connect(
   mapStateToProps
-)(App)
+)(Radium(App))

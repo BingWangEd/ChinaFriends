@@ -1,78 +1,75 @@
 import React, {Component} from 'react';
-import Radium from 'radium';
+import {connect} from 'react-redux';
+import Radium, {StyleRoot} from 'radium';
 import {colors} from '../../helpers';
 import './navBarStyleSheet.css';
+import NavList from './navList';
+import BurgerMenu from './burgerMenu'
 
-const styles = {
-  headerStyle: {
-    height: '60px',
-    position: 'webkitSticky', 
-    position: 'sticky',
-    top: 0,
-    background: 'white',
-    zIndex: '9'
-  },
-  ulStyle: {
-    position: 'absolute',
-    float: 'left',
-    marginTop: '30px',
-    paddingLeft: 0
-  },
-  listStyle: {
-    listStyleType: 'none',
-    display: 'inline',
-    cursor: 'pointer'
-  },
-  linkStyle: {
-    width: '500px',
-    paddingLeft: '16px',
-    paddingRight: '16px',
-    textAlign: 'center',
-    color: colors.gray,
-    fontFamily: "'Comfortaa', cursive"
-  },
-  tabStyle: {
-    display: 'inline-block',
-    margin: 0
-  },
-  logoStyle: {
-    height: '50px',
-    float: 'right'
-  },
-  center: {
-    margin: 'auto',
-    width: '85%'
-  }
-};
-
-const colorList = Object.keys(colors)
-
-const NavBarTabs = ({ tabs, handleSelectSection, logo, scrollToPosition }) => (
-  <div style={[styles.headerStyle]} >
-    <div style={[styles.center]}>
-      <ul style={[styles.ulStyle]}>
-      {
-        Object.keys(tabs).map((key)=>{
-          const classStyleNames = 'tab '+ colorList[(tabs[key]%5)-1]
-          if (key === 'Contact') {
-            return (
-              <li style={[styles.listStyle]} key={tabs[key]}>
-                <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); scrollToPosition(e, 1317) }}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
-              </li>
-            )
-          } else {
-            return (
-              <li style={[styles.listStyle]} key={tabs[key]}>
-                <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); scrollToPosition(e, 0) }}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
-              </li>
-            )
-          }
-        })
+class NavBarTabs extends Component {
+  render(){
+    const styles = {
+    headerStyle: {
+      position: 'webkitSticky', 
+      position: 'sticky',
+      overflow: 'auto',
+      top: 0,
+      // background: 'red',
+      zIndex: '9'
+    },
+    logoStyle: {
+      height: '50px',
+      float: 'right'
+    },
+    center: {
+      margin: 'auto',
+      width: '85%'
+    },
+    burgerMenuResponsive: {
+      '@media screen and (min-width: 880px)': {
+        display: 'none'
       }
-      </ul>
-      <div><img style={[styles.logoStyle]} src={process.env.PUBLIC_URL+logo} alt="character" /></div>
-    </div>
-  </div>
-)
+    },
+    listMenuResponsive: {
+      position: 'absolute',
+      float: 'left',
+      paddingLeft: 0,
+      '@media screen and (max-width: 880px)': {
+        display: 'none'
+      }
+    }
+  };
 
-export default Radium(NavBarTabs);
+  const colorList = Object.keys(colors)
+
+  return (
+    <div style={[styles.headerStyle]} >
+      <div style={[styles.center]}>
+        <div><img style={[styles.logoStyle]} src={process.env.PUBLIC_URL+this.props.logo} alt="character" /></div>
+        <div style={[styles.burgerMenuResponsive]}>
+          <BurgerMenu
+            tabs = {this.props.tabs} 
+            handleSelectSection = {this.props.handleSelectSection} 
+            scrollToPosition = {this.props.scrollToPosition}
+          />
+        </div>
+        <div style={[styles.listMenuResponsive]}>
+          <NavList 
+            tabs = {this.props.tabs} 
+            handleSelectSection = {this.props.handleSelectSection} 
+            scrollToPosition = {this.props.scrollToPosition}
+          />
+        </div>
+      </div>
+    </div>
+    )
+  }
+}
+
+function mapStateToProps(state){
+  return state
+}
+
+export default connect(
+  mapStateToProps
+)(Radium(NavBarTabs))
