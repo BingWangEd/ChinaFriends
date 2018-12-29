@@ -26,6 +26,9 @@ const styles = {
     position: 'relative',
     '@media screen and (max-width: 520px)': {
         width: '70%'
+      },
+    '@media screen and (max-width: 430px)': {
+        height: '300px'
       }
   },
   ChinaFriends: {
@@ -34,6 +37,9 @@ const styles = {
     fontFamily: "'Comfortaa', cursive",
     '@media screen and (max-width: 520px)': {
         fontSize: '1.3em'
+      },
+    '@media screen and (max-width: 430px)': {
+        display: 'none'
       }
   },
   imageStyle: {
@@ -51,6 +57,9 @@ const styles = {
   wordStyle: {
     '@media screen and (max-width: 520px)': {
         fontSize: '2em'
+      },
+    '@media screen and (max-width: 400px)': {
+        fontSize: '1.5em'
       }
   },
   atStyle: {
