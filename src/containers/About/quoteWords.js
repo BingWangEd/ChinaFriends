@@ -17,7 +17,10 @@ const styles = {
     color: colors.blue,
     display: 'inline',
     float: 'left',
-    width: '10%'
+    width: '10%',
+    "@media screen and (max-width: 900px)": {
+      fontSize: '100px'
+    }
   },
   words: {
     fontFamily: "'Comfortaa', cursive",
@@ -29,12 +32,18 @@ const styles = {
     color: colors.gray,
     display: 'inline',
     float: 'left',
-    width: '90%'
+    width: '90%',
+    "@media screen and (max-width: 720px)": {
+      fontSize: '23px'
+    }
   },
   author:{
     float: 'right',
     color: colors.red,
-    fontSize: '25px'
+    fontSize: '25px',
+    "@media screen and (max-width: 500px)": {
+      fontSize: '18px'
+    }
   },
   center: {
     margin: '60px auto',
@@ -44,7 +53,10 @@ const styles = {
     fontFamily: 'sans-serif',
     fontWeight: 'bold',
     fontSize: '28px',
-    color: '#484848'
+    color: '#484848',
+    "@media screen and (max-width: 720px)": {
+      fontSize: '23px'
+    }
   }
 };
 
