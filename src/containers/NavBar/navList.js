@@ -11,7 +11,11 @@ const styles = {
     listStyle: {
       listStyleType: 'none',
       display: 'inline',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      '@media screen and (max-width: 760px)': {
+        display: 'block',
+        paddingTop: '5px'
+      }
     },
     linkStyle: {
       width: '500px',

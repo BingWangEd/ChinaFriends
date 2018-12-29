@@ -23,18 +23,40 @@ const styles = {
     margin: 'auto',
     height: '380px',
     lineHeight: '50px',
-    position: 'relative'
+    position: 'relative',
+    '@media screen and (max-width: 520px)': {
+        width: '70%'
+      }
   },
   ChinaFriends: {
     fontSize: '33pt',
     color: 'white',
-    fontFamily: "'Comfortaa', cursive"
+    fontFamily: "'Comfortaa', cursive",
+    '@media screen and (max-width: 520px)': {
+        fontSize: '1.3em'
+      }
   },
   imageStyle: {
     width: '130px',
     position: 'absolute',
     right: '-20px',
-    top: '-15px'
+    top: '-15px',
+    '@media screen and (max-width: 480px)': {
+        width: '90px'
+      },
+    '@media screen and (max-width: 350px)': {
+        display: 'none'
+      }
+  },
+  wordStyle: {
+    '@media screen and (max-width: 520px)': {
+        fontSize: '2em'
+      }
+  },
+  atStyle: {
+    '@media screen and (max-width: 460px)': {
+      display: 'none'
+    }
   }
 };
 
@@ -42,10 +64,10 @@ const BannerView = ({ imgSrc, chicagoBestImgSrc }) => (
     <div style={[styles.parallax]}>
       <div style={[styles.banner]}>
         <div><img style={[styles.imageStyle]} src={process.env.PUBLIC_URL+chicagoBestImgSrc} alt="Chicago best image" /></div>
-        <h1>Fun</h1>
-        <h1>Friends</h1>
-        <h1>Fluency</h1>
-        <h1 style={[styles.ChinaFriends]}>&#64;ChinaFriends</h1>
+        <h1 style={[styles.wordStyle]}>Fun</h1>
+        <h1 style={[styles.wordStyle]}>Friends</h1>
+        <h1 style={[styles.wordStyle]}>Fluency</h1>
+        <h1 style={[styles.ChinaFriends]}><span style={[styles.atStyle]}>&#64;</span>ChinaFriends</h1>
       </div>
     </div>   
 )

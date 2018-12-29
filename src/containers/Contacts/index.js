@@ -13,13 +13,11 @@ class Contacts extends Component {
     if (this.props.selected_section === 'Contact'){
       window.scrollTo({top: '1317', left: 0, behavior: 'smooth'});
     }
-
-    
   }
 
   render() {
     return (
-      <section className='contact'><ContactForm contactsInfo = {contacts} /></section>
+      <div className='contact'><ContactForm contactsInfo = {contacts} /></div>
     );
   }
 }

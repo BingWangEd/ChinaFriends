@@ -5,10 +5,8 @@ import {colors} from '../../helpers';
 const styles = {
   center: {
     margin: '60px auto 0 auto',
-    width: 'inherit',
     textAlign: 'center',
-    // background: 'radial-gradient(circle closest-corner at 50% 50%, '+ colors.lightYellow +',' + colors.yellow + ')',
-    padding: '100px'
+    width: '100%'
   },
   arrowDown: {
     width: 0,

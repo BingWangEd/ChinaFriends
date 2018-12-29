@@ -14,8 +14,9 @@ class NavBarTabs extends Component {
       position: 'sticky',
       overflow: 'auto',
       top: 0,
-      // background: 'red',
-      zIndex: '9'
+      background: 'white',
+      zIndex: '9',
+      width: '100%'
     },
     logoStyle: {
       height: '50px',
