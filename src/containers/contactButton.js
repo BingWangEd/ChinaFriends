@@ -1,0 +1,49 @@
+import React, {Component} from 'react';
+import {selectSection} from '../actions/index';
+import {connect} from 'react-redux';
+import Radium from 'radium';
+import {colors} from '../helpers';
+import './helpersStyleSheet.css';
+
+const styles = {
+  button: {
+    borderRadius: '4px',
+    border: 'none',
+    padding: '20px',
+    textAlign: 'center',
+    textDecoration: 'none',
+    margin: '4px 2px',
+    color: 'white',
+    backgroundColor: colors.red,
+    fontFamily: "'Comfortaa', cursive",
+    cursor: 'pointer',
+    display: 'block',
+    fontSize: '1em',
+    margin: '10px auto 0 auto',
+    width: '225.64px',
+    '@media screen and (min-width: 600px)': {
+      margin: '10px 0 0 0'
+    },
+    ':hover': {
+      backgroundColor: 'white',
+      color: colors.red
+    }
+  }
+};
+
+class ContactButton extends Component{
+  render(){
+    return (
+      <button onClick={(e)=>{ e.preventDefault; this.props.selectSection("Contact"); }} style={[styles.button]}>Contact Us to Sign Up</button>
+    )
+  }
+} 
+
+function mapStateToProps(state){
+  return state
+}
+
+export default connect(
+  mapStateToProps,
+  {selectSection}
+)(Radium(ContactButton))

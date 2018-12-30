@@ -10,7 +10,6 @@ class About extends Component {
     return (
       <div className='clearfix' id='About'>
         <Banner />
-        
         <Quote />
       </div>
     );

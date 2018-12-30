@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Radium from 'radium';
 import {colors} from '../helpers';
 import './helpersStyleSheet.css';
+import ContactButton from './contactButton'
 
 const styles = {
   parallax: {
@@ -41,8 +42,9 @@ const styles = {
 
 const BannerView = ({ imgSrc, header }) => (
     <div style={[styles.parallax, { backgroundImage: "url('"+imgSrc+"')" }]}>
-      <div  style={[styles.banner]}>
+      <div style={[styles.banner]}>
         <h1 className="underline" style={[styles.header]}>{header}</h1>
+        <ContactButton />
       </div>
     </div>   
 )

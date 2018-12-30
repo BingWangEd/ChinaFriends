@@ -7,7 +7,7 @@ const styles = {
     minHeight: '500px',
     backgroundImage: "url('images/Front.jpg')",
     backgroundAttachment: 'fixed',
-    backgroundPosition: 'center',
+    backgroundPosition: 'top center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     display: 'flex',

@@ -11,7 +11,7 @@ class Contacts extends Component {
 
   componentDidMount(){
     if (this.props.selected_section === 'Contact'){
-      window.scrollTo({top: '1317', left: 0, behavior: 'smooth'});
+      window.scrollTo({bottom: '70', left: 0, behavior: 'smooth'});
     }
   }
 

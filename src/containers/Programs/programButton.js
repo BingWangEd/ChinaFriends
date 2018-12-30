@@ -7,11 +7,11 @@ const styles = {
   grid: {
     width: '100%',
     textAlign: 'center',
-    height: '320px',
+    height: '300px',
     position: 'relative',
     display: 'inline-block',
-    // boxShadow: '0 1px 2px' + colors.gray,
-    paddingTop: '40px'
+    paddingTop: '40px',
+    cursor: 'pointer'
   },
   title: {
     fontFamily: "'Comfortaa', cursive",
@@ -36,7 +36,8 @@ const styles = {
     position: 'absolute',
     bottom: '10px',
     left: '10%',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    Zindex: '9'
   }
 };
 
@@ -46,11 +47,11 @@ const ProgramButton = ({ title, id, ifSelected, description, imgSrc, selectProgr
   <div style={[styles.grid, {backgroundColor: ifSelected ? colors.yellow : '#F8F8F8'}]}
     onMouseEnter={()=>{setProgramImage(imgSrc); selectProgram(title) }}
     onMouseLeave={()=>{unselectProgram()}}
+    onClick={()=>{ selectSection('Programs') }}
   >
     <img src={process.env.PUBLIC_URL+'icons/'+title+'.png'} alt="icon" />
     <h2 style={[styles.title]}>{title}</h2>
     <p style={[styles.description, {color: ifSelected ? 'black' : colors.gray}]}>{description}</p>
-    <button onClick={()=>{ selectSection('Programs') }} style={[styles.button, {opacity: ifSelected ? '1' : '0'}]}>Click to Know More</button>
   </div>
 )
 
