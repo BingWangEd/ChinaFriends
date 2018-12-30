@@ -10,15 +10,24 @@ const styles = {
     paddingTop: '60px'
   },
   container:{
-    width: '33%',
-    float: 'left'
+    '@media screen and (min-width: 500px)': {
+      width: '50%',
+      float: 'left'
+    },
+    '@media screen and (min-width: 900px)': {
+      width: '33%',
+      float: 'left'
+    }
   },
   column: {
     padding: '20px',
-    minHeight: '650px',
+    minHeight: '600px',
     textAlign: 'center',
     margin: '10px',
-    boxShadow: '0 1px 2px' + colors.gray
+    boxShadow: '0 1px 2px' + colors.gray,
+    '@media screen and (min-width: 500px)': {
+      minHeight: '650px'
+    }
   },
   image: {
     width: '100%'

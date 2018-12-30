@@ -22,7 +22,7 @@ const styles = {
 const CalendarSection = ({ holidays, quarters }) => (
   <div style={[styles.center]}>
     <div>
-      <HeaderDeco header = "Quater Terms" />
+      <HeaderDeco header = "Quaters" />
       <table style={[styles.tableStyle]}>
         {Object.keys(quarters).map((key)=>{
           return (

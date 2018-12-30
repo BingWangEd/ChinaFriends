@@ -11,37 +11,39 @@ const styles = {
     paddingTop: '80px'
   },
   imageDiv: {
-    width: '40%',
+    width: '100%',
     overflow: 'hidden',
-    minHeight: '420px',
+    minHeight: '250px',
     transition: 'all 0.8s',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    display: 'inline-block',
-    float: 'left',
     backgroundRepeat: 'no-repeat', 
     backgroundSize: '100%',
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
+    '@media screen and (min-width: 700px)': {
+      display: 'inline-block',
+      float: 'left',
+      width: '40%'
+    },
+    '@media screen and (min-width: 500px)': {
+      minHeight: '420px'
+    }
   },
   list: {
-    width: '50%',
+    width: '100%',
     listStyleType: 'none',
-    marginLeft: '1%',
-    float: 'left',
-    display: 'inline-block'
+    paddingLeft: 0,
+    transition: 'all 0.8s',
+    '@media screen and (min-width: 700px)': {
+      float: 'left',
+      display: 'inline-block',
+      width: '50%',
+      marginLeft: '4%'
+    }
   },
   item: {
     color: colors.gray
-  },
-  arrowUp: {
-    width: 0, 
-    height: 0, 
-    borderLeft: '40px solid transparent',
-    borderRight: '40px solid transparent',
-    borderBottom: '40px solid '+colors.yellow,
-    position: 'absolute',
-    top: '-40px'
   },
   title: {
     fontFamily: "'Comfortaa', cursive"

@@ -5,14 +5,17 @@ import './helpersStyleSheet.css';
 
 const styles = {
   parallax: {
-    minHeight: '350px',
+    minHeight: '280px',
     backgroundAttachment: 'fixed',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    '@media screen and (min-width: 500px)': {
+      minHeight: '350px'
+    }
   },
   banner: {
     color: colors.yellow,
@@ -26,10 +29,13 @@ const styles = {
   },
   header: {
     margin: 0,
-    fontSize: '50pt',
+    fontSize: '40pt',
     height: '100%',
     padding: 0,
-    display: "inline-block"
+    display: "inline-block",
+    '@media screen and (min-width: 500px)': {
+      fontSize: '50pt'
+    }
   }
 };
 
