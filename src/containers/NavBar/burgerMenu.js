@@ -50,7 +50,7 @@ class BurgerMenu extends Component{
             (<div style={[styles.dropdownMenusStyle]}><NavList 
               tabs = {this.props.tabs} 
               handleSelectSection = {this.props.handleSelectSection} 
-              scrollToPosition = {this.props.scrollToPosition} /></div>) : null
+              /></div>) : null
           }
       </div>
     )

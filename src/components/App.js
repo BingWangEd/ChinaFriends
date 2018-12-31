@@ -7,11 +7,6 @@ import Footer from '../containers/Footer/index';
 import Radium, {StyleRoot} from 'radium';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.myRef = React.createRef();
-  }
-
   render() {
     return (
       <StyleRoot>

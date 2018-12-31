@@ -4,21 +4,45 @@ import ContactForm from './contactForm';
 import {contacts} from '../../helpers';
 
 class Contacts extends Component {
-  handleScrollToPosition = (e, position) => {
-    e.preventDefault();
-    window.scrollTo({top: position, left: 0, behavior: 'smooth'});
+  constructor(props){
+    super(props);
+    this.myRef = React.createRef();
   }
 
-  componentDidMount(){
-    if (this.props.selected_section === 'Contact'){
-      window.scrollTo({bottom: '70', left: 0, behavior: 'smooth'});
+  scrollToMyRef = () => {    
+    window.scrollTo({
+      top:this.myRef.current.offsetTop, 
+      behavior: "smooth"  
+    })
+  }
+
+  componentDidUpdate(){
+    if (this.myRef.current){
+      this.scrollToMyRef();
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
     }
   }
 
+  componentWillUnmount(){
+    window.scrollTo({
+      top: 0  
+    })
+  }
+
   render() {
-    return (
-      <div className='contact'><ContactForm contactsInfo = {contacts} /></div>
-    );
+    if (this.props.selected_section === 'Contact'){
+      return (
+        <div ref={this.myRef} className='contact'><ContactForm contactsInfo = {contacts} /></div>
+      );
+    } else {
+      return (
+        <div className='contact'><ContactForm contactsInfo = {contacts} /></div>
+      );
+    }
   }
 }
 

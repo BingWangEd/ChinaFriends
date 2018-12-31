@@ -51,14 +51,12 @@ class NavBarTabs extends Component {
           <BurgerMenu
             tabs = {this.props.tabs} 
             handleSelectSection = {this.props.handleSelectSection} 
-            scrollToPosition = {this.props.scrollToPosition}
           />
         </div>
         <div style={[styles.listMenuResponsive]}>
           <NavList 
             tabs = {this.props.tabs} 
-            handleSelectSection = {this.props.handleSelectSection} 
-            scrollToPosition = {this.props.scrollToPosition}
+            handleSelectSection = {this.props.handleSelectSection}
           />
         </div>
       </div>

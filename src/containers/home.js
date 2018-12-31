@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-
 import About from './About/index';
 import Programs from './Programs';
 import Contacts from './Contacts/index';
@@ -41,7 +40,7 @@ class MainContent extends Component {
         <div>
           <About />
           <Programs />
-          <Contacts ref={this.myRef} />
+          <Contacts />
         </div>
       );
     }

@@ -31,7 +31,7 @@ const styles = {
     }
   };
 
-const NavList = ({tabs, handleSelectSection, scrollToPosition}) => (
+const NavList = ({tabs, handleSelectSection }) => (
   <ul style={[styles.ulStyle]}>
   {
     Object.keys(tabs).map((key)=>{
@@ -39,13 +39,13 @@ const NavList = ({tabs, handleSelectSection, scrollToPosition}) => (
       if (key === 'Contact') {
         return (
           <li style={[styles.listStyle]} key={tabs[key]}>
-            <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); scrollToPosition(e, 1317) }}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
+            <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); }}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
           </li>
         )
       } else {
         return (
           <li style={[styles.listStyle]} key={tabs[key]}>
-            <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); scrollToPosition(e, 0) }}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
+            <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); }}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
           </li>
         )
       }
