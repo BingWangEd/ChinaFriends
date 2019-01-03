@@ -37,18 +37,22 @@ const NavList = ({tabs, handleSelectSection }) => (
   {
     Object.keys(tabs).map((key, index)=>{
       const classStyleNames = 'tab '+ colorList[(tabs[key]%5)-1]
-      if (key === 'Contact') {
-        return (
+      switch (key){
+        case 'Contact':
+          return (
           <li style={[styles.listStyle]} key={tabs[key]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); }}>
-            <NavLink to="/Contact" style={styles.linkStyle}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></NavLink>
+            <NavLink to="/Contact" style={styles.linkStyle} activeStyle={{color: colors.red}}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></NavLink>
+          </li>)
+        case 'Home': 
+          return(<li style={[styles.listStyle]} key={tabs[key]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); }}>
+            <NavLink exact to='/' style={styles.linkStyle} activeStyle={{color: colors.red}}><h4 className={classStyleNames} style={[styles.tabStyle]}>{key}</h4></NavLink>
+          </li>)
+        default:
+          return(
+            <li style={[styles.listStyle]} key={tabs[key]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); }}>
+            <NavLink to={`/${key.replace(/ & /g, '')}`} style={styles.linkStyle} activeStyle={{color: colors.red}}><h4 className={classStyleNames} style={[styles.tabStyle]}>{key}</h4></NavLink>
           </li>
-        )
-      } else {
-        return (
-          <li style={[styles.listStyle]} key={tabs[key]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); }}>
-            <NavLink to={key === 'Home' ? '/' : `/${key.replace(/ & /g, '')}`} style={styles.linkStyle}><h4 className={classStyleNames} style={[styles.tabStyle]}>{key}</h4></NavLink>
-          </li>
-        )
+          )
       }
     })
   }

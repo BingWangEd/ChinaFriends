@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
+import ContactButton from '../contactButton';
 
 const styles = {
   parallax: {
-    minHeight: '500px',
+    minHeight: '620px',
     backgroundImage: "url('images/Front.jpg')",
     backgroundAttachment: 'fixed',
     backgroundPosition: 'top center',
@@ -12,16 +13,19 @@ const styles = {
     backgroundSize: 'cover',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    '@media screen and (max-width: 430px)': {
+      minHeight: '420px'
+    }
   },
   banner: {
     color: colors.yellow,
     padding: '0 40px 25px 40px',
     background: 'rgba(0, 0, 0, 0.3)',
-    width: '350px',
+    width: '430px',
     fontSize: '25pt',
     margin: 'auto',
-    height: '380px',
+    height: '510px',
     lineHeight: '50px',
     position: 'relative',
     '@media screen and (max-width: 520px)': {
@@ -62,8 +66,15 @@ const styles = {
         fontSize: '1.5em'
       }
   },
-  atStyle: {
+  disappear: {
     '@media screen and (max-width: 460px)': {
+      display: 'none'
+    }
+  },
+  ChineseStyle: {
+    fontFamily: "LiSu",
+    fontSize: '0.7em',
+    '@media screen and (max-width: 520px)': {
       display: 'none'
     }
   }
@@ -73,10 +84,11 @@ const BannerView = ({ imgSrc, chicagoBestImgSrc }) => (
     <div style={[styles.parallax]}>
       <div style={[styles.banner]}>
         <div><img style={[styles.imageStyle]} src={process.env.PUBLIC_URL+chicagoBestImgSrc} alt="Chicago best image" /></div>
-        <h1 style={[styles.wordStyle]}>Fun</h1>
-        <h1 style={[styles.wordStyle]}>Friends</h1>
-        <h1 style={[styles.wordStyle]}>Fluency</h1>
-        <h1 style={[styles.ChinaFriends]}><span style={[styles.atStyle]}>&#64;</span>ChinaFriends</h1>
+        <h1 style={[styles.wordStyle]}>Fun <span style={[styles.ChineseStyle]}>有乐趣</span></h1>
+        <h1 style={[styles.wordStyle]}>Friends <span style={[styles.ChineseStyle]}>有朋友</span></h1>
+        <h1 style={[styles.wordStyle]}>Fluency <span style={[styles.ChineseStyle]}>有的说</span></h1>
+        <h1 style={[styles.ChinaFriends]}><span style={[styles.disappear]}>&#64;</span>ChinaFriends</h1>
+        <ContactButton style={[styles.buttonStyle]} />
       </div>
     </div>   
 )

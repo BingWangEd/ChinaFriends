@@ -16,7 +16,6 @@ class Contacts extends Component {
     })
   }
   scrollToTop = () => {
-    console.log('scroll to top')
     window.scrollTo({
       top: 0,
       behavior: "smooth"

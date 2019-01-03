@@ -19,7 +19,7 @@ const styles = {
     fontFamily: "'Comfortaa', cursive",
     cursor: 'pointer',
     display: 'block',
-    fontSize: '1em',
+    fontSize: '16px',
     margin: '10px auto 0 auto',
     width: '225.64px',
     '@media screen and (min-width: 600px)': {
