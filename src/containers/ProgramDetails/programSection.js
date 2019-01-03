@@ -11,7 +11,8 @@ class ProgramSection extends Component {
     this.myRef = React.createRef();
   }
 
-  scrollToMyRef = () => {    
+  scrollToMyRef = () => {
+    console.log('im triggered in program section') 
     window.scrollTo({
       top:this.myRef.current.offsetTop, 
       behavior: "smooth"  

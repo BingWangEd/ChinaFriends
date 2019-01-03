@@ -68,7 +68,5 @@ const ProgramImageDisplay = ({ programImage, items, currNum }) => {
     </div>
   )
 }
-  
-
 
 export default Radium(ProgramImageDisplay);

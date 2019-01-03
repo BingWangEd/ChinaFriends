@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import Radium from 'radium';
 import {colors} from '../helpers';
 import './helpersStyleSheet.css';
+import {NavLink} from 'react-router-dom';
 
 const styles = {
   button: {
@@ -28,13 +29,14 @@ const styles = {
       backgroundColor: 'white',
       color: colors.red
     }
-  }
+  },
+
 };
 
 class ContactButton extends Component{
   render(){
     return (
-      <button onClick={(e)=>{ e.preventDefault; this.props.selectSection("Contact"); }} style={[styles.button]}>Contact Us to Sign Up</button>
+      <NavLink to='/Contact' style={{textDecoration: 'none'}}><button onClick={(e)=>{ e.preventDefault; this.props.selectSection("Contact"); }} style={[styles.button]}>Contact Us to Sign Up</button></NavLink>
     )
   }
 } 

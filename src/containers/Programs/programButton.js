@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
 import './programsStyleSheet.css';
+import {NavLink} from 'react-router-dom';
 
 const styles = {
   grid: {
@@ -44,7 +45,7 @@ const styles = {
 const colorList = Object.keys(colors)
 
 const ProgramButton = ({ title, id, ifSelected, description, imgSrc, selectProgram, unselectProgram, setProgramImage, unsetProgramImage, selectSection }) => (
-  <div style={[styles.grid, {backgroundColor: ifSelected ? colors.yellow : '#F8F8F8'}]}
+  <NavLink to="/Programs"><div style={[styles.grid, {backgroundColor: ifSelected ? colors.yellow : '#F8F8F8'}]}
     onMouseEnter={()=>{setProgramImage(imgSrc); selectProgram(title) }}
     onMouseLeave={()=>{unselectProgram()}}
     onClick={()=>{ selectSection('Programs') }}
@@ -52,7 +53,7 @@ const ProgramButton = ({ title, id, ifSelected, description, imgSrc, selectProgr
     <img src={process.env.PUBLIC_URL+'icons/'+title+'.png'} alt="icon" />
     <h2 style={[styles.title]}>{title}</h2>
     <p style={[styles.description, {color: ifSelected ? 'black' : colors.gray}]}>{description}</p>
-  </div>
+  </div></NavLink>
 )
 
 export default Radium(ProgramButton);

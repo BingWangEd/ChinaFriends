@@ -6,7 +6,7 @@ import ScheduleTable from './scheduleTable';
 import BannerView from '../sessionBanner';
 import ClassRates from './classRates';
 
-class Schedule extends Component {
+class ScheduleRate extends Component {
   render(){
     return (
       <div>
@@ -33,4 +33,4 @@ function mapStateToProps(state){
 export default connect(
   mapStateToProps,
   {addScheduleIntroDisplay, removeScheduleIntroDisplay}
-)(Schedule)
+)(ScheduleRate)

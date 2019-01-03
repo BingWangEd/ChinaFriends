@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
+import {NavLink} from 'react-router-dom';
 
 const colorList = Object.keys(colors)
 
@@ -34,18 +35,18 @@ const styles = {
 const NavList = ({tabs, handleSelectSection }) => (
   <ul style={[styles.ulStyle]}>
   {
-    Object.keys(tabs).map((key)=>{
+    Object.keys(tabs).map((key, index)=>{
       const classStyleNames = 'tab '+ colorList[(tabs[key]%5)-1]
       if (key === 'Contact') {
         return (
-          <li style={[styles.listStyle]} key={tabs[key]}>
-            <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); }}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
+          <li style={[styles.listStyle]} key={tabs[key]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); }}>
+            <NavLink to="/Contact" style={styles.linkStyle}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></NavLink>
           </li>
         )
       } else {
         return (
-          <li style={[styles.listStyle]} key={tabs[key]}>
-            <a style={[styles.linkStyle]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); }}><h4 className={classStyleNames} style={[styles.tabStyle]} key={tabs[key]}>{key}</h4></a>
+          <li style={[styles.listStyle]} key={tabs[key]} onClick={(e)=>{e.preventDefault(); handleSelectSection(key); }}>
+            <NavLink to={key === 'Home' ? '/' : `/${key.replace(/ & /g, '')}`} style={styles.linkStyle}><h4 className={classStyleNames} style={[styles.tabStyle]}>{key}</h4></NavLink>
           </li>
         )
       }
