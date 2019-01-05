@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Radium from 'radium';
-import {colors} from '../../helpers';
-import ClassSchedules from './classSchedules';
-import HeaderView from '../headerDeco';
+import ClassScheduleTable from './classScheduleTable';
+import SectionHeader from '../HelperComponents/sectionHeader';
 
 const styles = {
   center: {
@@ -16,17 +15,15 @@ const styles = {
   }
 };
 
-const colorList = Object.keys(colors)
-
-class ScheduleTable extends Component {
+class ClassSchedule extends Component {
   render(){
     const schedules = this.props.schedules
     return (
       <div style={[styles.center]}> 
-        <HeaderView header = "Schedule" />
+        <SectionHeader header = "Schedule" />
       {
         schedules.map((eachClass, index)=>{
-            return (<ClassSchedules 
+            return (<ClassScheduleTable 
               className = {eachClass["className"]}
               classIntro = {eachClass["intro"]}
               classSchedules = {eachClass["schedule"]}
@@ -44,4 +41,4 @@ function mapStateToProps(state){
 
 export default connect(
   mapStateToProps
-)(Radium(ScheduleTable))
+)(Radium(ClassSchedule))

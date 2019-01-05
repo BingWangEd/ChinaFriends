@@ -2,16 +2,16 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {holidays} from '../../helpers';
 import {quarters} from '../../helpers';
-import BannerView from '../sessionBanner';
-import CalendarSection from './calendarSection';
+import BannerView from '../HelperComponents/sessionBanner';
+import Calendar from './calendar';
 
-class Calendar extends Component {
+class CalendarContainer extends Component {
   render(){
     return (
         <div>
           <BannerView imgSrc = 'images/Calendar.jpg' header = 'Mark the Date'
           />
-          <CalendarSection holidays={holidays} quarters={quarters} />
+          <Calendar holidays={holidays} quarters={quarters} />
         </div>
     )
   }
@@ -23,4 +23,4 @@ function mapStateToProps(state){
 
 export default connect(
   mapStateToProps
-)(Calendar)
+)(CalendarContainer)

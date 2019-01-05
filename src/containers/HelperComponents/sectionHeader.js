@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
-import {colors} from '../helpers';
+import {colors} from '../../helpers';
 import './helpersStyleSheet.css';
 
 const styles = {
@@ -37,10 +37,10 @@ const styles = {
   }
 };
 
-const HeaderView = ({ header }) => (
+const SectionHeader = ({ header }) => (
   <div style={[styles.background]}>
     <h1 style={[styles.words]}>{header}</h1>
   </div>
 )
 
-export default Radium(HeaderView);
+export default Radium(SectionHeader);

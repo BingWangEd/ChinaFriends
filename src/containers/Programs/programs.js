@@ -1,8 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
-import {colors} from '../../helpers';
-import ProgramButton from './programButton';
-import ProgramImageDisplay from './programImageDisplay';
+import ProgramPost from './programPost';
 import './programsStyleSheet.css';
 
 const styles = {
@@ -55,29 +53,12 @@ const styles = {
   }
 };
 
-const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unselectProgram, setProgramImage, unsetProgramImage, selectSection }) => {
-  let currNum = null;
-  switch (currProgram) {
-            case 'Language':
-              currNum = 0;
-              break;
-            case 'Culture':
-              currNum = 1;
-              break;
-            case 'AfterSchool':
-              currNum = 2;
-              break;
-            case 'Trip':
-              currNum = 3;
-              break;
-            default:
-              currNum = null;
-          }
+const Programs = ({ programs, currProgram, programImage, selectProgram, unselectProgram, setProgramImage, unsetProgramImage, selectSection }) => {
   return (
     <div style={[styles.center]} className='clearfix'>
       <div className='clearfix'>
         <div style={[styles.programGrid, styles.leftMargin, styles.ResponsiveAll]}>
-          <ProgramButton 
+          <ProgramPost 
             title="Language"
             id={programs["Language"].id}
             ifSelected={currProgram==="Language" ? true : false}
@@ -91,7 +72,7 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
           />
         </div>
         <div style={[styles.programGrid, styles.centerMargin, styles.ResponsiveAll]}>
-          <ProgramButton 
+          <ProgramPost 
             title="Culture"
             id={programs["Culture"].id}
             ifSelected={currProgram==="Culture" ? true : false}
@@ -106,7 +87,7 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
           />
         </div>
         <div style={[styles.programGrid, styles.centerMargin, styles.AfterSchoolResponsive, styles.ResponsiveAll]}>
-          <ProgramButton 
+          <ProgramPost 
             title="AfterSchool"
             id={programs["AfterSchool"].id}
             ifSelected={currProgram==="AfterSchool" ? true : false}
@@ -121,7 +102,7 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
           />
         </div>
         <div style={[styles.programGrid, styles.rightMargin, styles.TripResponsive, styles.ResponsiveAll]}>
-          <ProgramButton 
+          <ProgramPost 
             title="Trip"
             id={programs["Trip"].id}
             ifSelected={currProgram==="Trip" ? true : false}
@@ -140,6 +121,4 @@ const ProgramNames = ({ programs, currProgram, programImage, selectProgram, unse
   )
 }
 
-
-
-export default Radium(ProgramNames);
+export default Radium(Programs);

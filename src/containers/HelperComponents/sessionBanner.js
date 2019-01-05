@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
-import {colors} from '../helpers';
+import {colors} from '../../helpers';
 import './helpersStyleSheet.css';
 import ContactButton from './contactButton'
 

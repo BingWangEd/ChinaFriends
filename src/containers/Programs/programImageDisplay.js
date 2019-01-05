@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import Reactcfrom 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
 import './programsStyleSheet.css';
@@ -41,9 +41,6 @@ const styles = {
     fontFamily: "'Comfortaa', cursive"
   }
 };
-
-
-const colorList = Object.keys(colors)
 
 const ProgramImageDisplay = ({ programImage, items, currNum }) => {
   const itemsBox =  

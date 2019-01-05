@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
-import HeaderView from '../headerDeco';
+import SectionHeader from '../HelperComponents/sectionHeader';
 
 const styles = {
   center: {
@@ -30,7 +30,7 @@ const styles = {
 
 const ClassRates = ({ rates }) => (
   <div style={[styles.center]}>
-    <HeaderView header = "Class Rates" />
+    <SectionHeader header = "Class Rates" />
     <div style={[styles.sectionStyle]}>
       <h2 style={[styles.headerStyle]}>Children</h2>
       <p style={[styles.introStyle]}>{rates.Children.Length}; {rates.Children.Intro}</p>

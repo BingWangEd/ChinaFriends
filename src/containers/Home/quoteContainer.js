@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import QuoteWords from './quoteWords';
+import Quote from './quote';
 
-class Quote extends Component {
+class QuoteContainer extends Component {
   render(){
     
     const person = "Zhaoyi Liu"
     const title = "parent, teacher, CEO of ChinaFriends"
     return (
-        <QuoteWords
+        <Quote
           person = {person}
           title = {title}
         />
@@ -22,4 +22,4 @@ function mapStateToProps(state){
 
 export default connect(
   mapStateToProps
-)(Quote)
+)(QuoteContainer)

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Radium from 'radium';
-import TableCell from './tableCell';
+import ClassScheduleTableCell from './classScheduleTableCell';
 import {colors} from '../../helpers';
 
 const styles = {
@@ -32,7 +32,7 @@ const styles = {
 
 let introOpen = false
 
-class ClassSchedules extends Component{
+class ClassScheduleTable extends Component{
   render(){
     let toggle = (e) => {
       e.preventDefault;
@@ -46,7 +46,7 @@ class ClassSchedules extends Component{
         <div style={[styles.classTitleStyle]}><h2 style={[styles.classHeaderStyle]}>{this.props.className}</h2>{button}</div>
         <div><p style={[styles.classIntroStyle]}>{intro}</p></div>
         <table>
-          <TableCell 
+          <ClassScheduleTableCell 
             classSchedules = {this.props.classSchedules}
           />
         </table>
@@ -62,4 +62,4 @@ function mapStateToProps(state){
 
 export default connect(
   mapStateToProps
-)(Radium(ClassSchedules))
+)(Radium(ClassScheduleTable))

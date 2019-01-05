@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
 import './teamStyle.css'
 import {colors} from '../../helpers';
@@ -47,7 +47,7 @@ const styles = {
 };
 
 
-const TeamSection = ({ team }) => (
+const Team = ({ team }) => (
   <div style={[styles.center]} className='row'>
     {
       team.map((member, index)=>{
@@ -58,7 +58,7 @@ const TeamSection = ({ team }) => (
         return (
           <div style={[styles.container]}>
             <div key={index} style={[styles.column]}>
-              <img style={[styles.image]} src={process.env.PUBLIC_URL+imgSrc} alt="person image" />
+              <img style={[styles.image]} src={process.env.PUBLIC_URL+imgSrc} alt="person" />
               <h1 style={[styles.nameStyle]}>{name}</h1>
               <h3 style={[styles.titleStyle]}>{title}</h3>
               <p style={[styles.descriptionStyle]}>{description}</p>
@@ -70,4 +70,4 @@ const TeamSection = ({ team }) => (
   </div>
 )
 
-export default Radium(TeamSection);
+export default Radium(Team);

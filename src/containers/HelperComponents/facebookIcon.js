@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
-import {colors} from '../helpers';
 import './helpersStyleSheet.css';
 
 const styles = {
@@ -18,7 +17,7 @@ const styles = {
 
 const FackbookIcon = ({ header }) => (
     <div style={[styles.iconPositionStyle]}>
-      <a href = "https://www.facebook.com/ChinaFriendUSA"><img style={[styles.iconStyle]} src = {process.env.PUBLIC_URL+ 'icons/Facebook.png'} /></a>
+      <a href = "https://www.facebook.com/ChinaFriendUSA"><img style={[styles.iconStyle]} src = {process.env.PUBLIC_URL+ 'icons/Facebook.png'} alt='facebook icon'/></a>
     </div>   
 )
 

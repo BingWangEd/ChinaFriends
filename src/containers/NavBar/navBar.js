@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import Radium, {StyleRoot} from 'radium';
-import {colors} from '../../helpers';
+import Radium from 'radium';
 import './navBarStyleSheet.css';
 import NavList from './navList';
 import BurgerMenu from './burgerMenu'
 
-class NavBarTabs extends Component {
+class NavBar extends Component {
   render(){
     const styles = {
     headerStyle: {
-      position: 'webkitSticky', 
       position: 'sticky',
       overflow: 'auto',
       top: 0,
@@ -41,8 +39,6 @@ class NavBarTabs extends Component {
     }
   };
 
-  const colorList = Object.keys(colors)
-
   return (
     <div style={[styles.headerStyle]} >
       <div style={[styles.center]}>
@@ -71,4 +67,4 @@ function mapStateToProps(state){
 
 export default connect(
   mapStateToProps
-)(Radium(NavBarTabs))
+)(Radium(NavBar))

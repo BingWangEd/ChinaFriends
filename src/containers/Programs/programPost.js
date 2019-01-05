@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
 import './programsStyleSheet.css';
@@ -42,9 +42,7 @@ const styles = {
   }
 };
 
-const colorList = Object.keys(colors)
-
-const ProgramButton = ({ title, id, ifSelected, description, imgSrc, selectProgram, unselectProgram, setProgramImage, unsetProgramImage, selectSection }) => (
+const ProgramPost = ({ title, id, ifSelected, description, imgSrc, selectProgram, unselectProgram, setProgramImage, unsetProgramImage, selectSection }) => (
   <NavLink to="/Programs"><div style={[styles.grid, {backgroundColor: ifSelected ? colors.yellow : '#F8F8F8'}]}
     onMouseEnter={()=>{setProgramImage(imgSrc); selectProgram(title) }}
     onMouseLeave={()=>{unselectProgram()}}
@@ -56,4 +54,4 @@ const ProgramButton = ({ title, id, ifSelected, description, imgSrc, selectProgr
   </div></NavLink>
 )
 
-export default Radium(ProgramButton);
+export default Radium(ProgramPost);

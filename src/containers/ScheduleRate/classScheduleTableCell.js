@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
-import {colors} from '../../helpers';
 
 const styles = {
   cellStyle: {
@@ -11,9 +10,7 @@ const styles = {
   }
 };
 
-const colorList = Object.keys(colors)
-
-const TableCell = ({ classSchedules }) => (
+const ClassScheduleTableCell = ({ classSchedules }) => (
 
   classSchedules.map((s)=>{
     return (
@@ -26,4 +23,4 @@ const TableCell = ({ classSchedules }) => (
 
 )
 
-export default Radium(TableCell);
+export default Radium(ClassScheduleTableCell);

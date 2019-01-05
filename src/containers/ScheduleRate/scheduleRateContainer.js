@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {addScheduleIntroDisplay, removeScheduleIntroDisplay} from '../../actions/index';
 import {schedules, rates} from '../../helpers';
-import ScheduleTable from './scheduleTable';
-import BannerView from '../sessionBanner';
+import ClassSchedule from './classSchedule';
+import BannerView from '../HelperComponents/sessionBanner';
 import ClassRates from './classRates';
 
-class ScheduleRate extends Component {
+class ScheduleRateContainer extends Component {
   render(){
     return (
       <div>
@@ -14,7 +14,7 @@ class ScheduleRate extends Component {
           imgSrc = "images/Schedule.jpg"
           header = "Find the Right Class"
         />
-        <ScheduleTable 
+        <ClassSchedule 
           schedules={schedules}
           schedule_intro_display={this.props.schedule_intro_display}
           addScheduleIntroDisplay = {this.props.addScheduleIntroDisplay}
@@ -33,4 +33,4 @@ function mapStateToProps(state){
 export default connect(
   mapStateToProps,
   {addScheduleIntroDisplay, removeScheduleIntroDisplay}
-)(ScheduleRate)
+)(ScheduleRateContainer)

@@ -1,18 +1,16 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {unselectProgram} from '../../actions/index';
-import './programStyle.css'
-import {colors} from '../../helpers';
+import './programStyle.css';
 import ProgramDisplay from './programDisplay';
+import {unselectProgram} from '../../actions/index';
 
-class ProgramSection extends Component {
+class ProgramDetails extends Component {
   constructor(props){
     super(props);
     this.myRef = React.createRef();
   }
 
-  scrollToMyRef = () => {
-    console.log('im triggered in program section') 
+  scrollToMyRef = () => { 
     window.scrollTo({
       top:this.myRef.current.offsetTop, 
       behavior: "smooth"  
@@ -56,7 +54,7 @@ class ProgramSection extends Component {
       }
       </div>
     )
-  }s
+  }
 }
 
 function mapStateToProps(state){
@@ -66,4 +64,4 @@ function mapStateToProps(state){
 export default connect(
   mapStateToProps,
   {unselectProgram}
-)(ProgramSection);
+)(ProgramDetails);

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Radium from 'radium';
-import {colors} from '../../helpers';
 import NavList from './navList';
 
 let menuOpen = false
@@ -30,10 +29,7 @@ class BurgerMenu extends Component{
       }
     }
 
-    const colorList = Object.keys(colors)
-
     const handleClickBurgerButton = (e) => {
-      console.log('handled click')
       e.preventDefault()
       menuOpen = !menuOpen
       this.forceUpdate()
@@ -43,7 +39,7 @@ class BurgerMenu extends Component{
       <div>
         <ul style={[styles.burgerListStyle]}>
           <li style={[styles.burgerIconStyle]}>
-            <a onClick={handleClickBurgerButton}><img style={[styles.iconStyle]} src = {process.env.PUBLIC_URL+'icons/MenuIcon.png'} /></a>
+            <a onClick={handleClickBurgerButton}><img style={[styles.iconStyle]} src = {process.env.PUBLIC_URL+'icons/MenuIcon.png'} alt='burger menu' /></a>
           </li>
         </ul>
           { menuOpen ? 

@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import BannerView from './bannerView';
+import Banner from './banner';
 
-class Banner extends Component {
+class BannerContainer extends Component {
   render(){
     const imgSrc = "/Images/Front.jpg"
     const chicagoBestImgSrc = "/ChgoMagBestOf.png"
     return (
-      <BannerView imgSrc = {imgSrc} chicagoBestImgSrc = {chicagoBestImgSrc} />
+      <Banner imgSrc = {imgSrc} chicagoBestImgSrc = {chicagoBestImgSrc} />
     )
   }
 }
@@ -18,4 +18,4 @@ function mapStateToProps(state){
 
 export default connect(
   mapStateToProps
-)(Banner)
+)(BannerContainer)

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux'
-import {contacts} from '../../helpers';
+import {connect} from 'react-redux';
 import Radium from 'radium';
 import {colors} from '../../helpers';
 

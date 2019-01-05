@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {selectSection} from '../actions/index';
+import {selectSection} from '../../actions/index';
 import {connect} from 'react-redux';
 import Radium from 'radium';
-import {colors} from '../helpers';
+import {colors} from '../../helpers';
 import './helpersStyleSheet.css';
 import {NavLink} from 'react-router-dom';
 
@@ -13,7 +13,6 @@ const styles = {
     padding: '20px',
     textAlign: 'center',
     textDecoration: 'none',
-    margin: '4px 2px',
     color: 'white',
     backgroundColor: colors.red,
     fontFamily: "'Comfortaa', cursive",

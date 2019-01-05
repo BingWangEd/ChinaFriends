@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {selectSection} from '../../actions/index';
 import {sections} from '../../helpers';
-import NavBarTabs from './navBarTabs';
+import NavBar from './navBar';
 import './navBarStyleSheet.css';
 
 
-class NavBar extends Component {
+class NavBarContainer extends Component {
   render(){
     return (
-        <NavBarTabs 
+        <NavBar
           tabs={sections} 
           handleSelectSection={this.props.selectSection} 
           logo="/ChinaFriendsLogo.jpg"
@@ -25,4 +25,4 @@ function mapStateToProps(state){
 export default connect(
   mapStateToProps, 
   {selectSection}
-)(NavBar)
+)(NavBarContainer)

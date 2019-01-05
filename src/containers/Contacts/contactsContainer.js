@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import ContactForm from './contactForm';
+import Contacts from './contacts';
 import {contacts} from '../../helpers';
 
-class Contacts extends Component {
+class ContactsContainer extends Component {
   constructor(props){
     super(props);
     this.myRef = React.createRef();
@@ -38,11 +38,11 @@ class Contacts extends Component {
   render() {
     if (this.props.selected_section === 'Contact'){
       return (
-        <div ref={this.myRef} className='contact'><ContactForm contactsInfo = {contacts} /></div>
+        <div ref={this.myRef} className='contact'><Contacts contactsInfo = {contacts} /></div>
       );
     } else {
       return (
-        <div className='contact'><ContactForm contactsInfo = {contacts} /></div>
+        <div className='contact'><Contacts contactsInfo = {contacts} /></div>
       );
     }
   }
@@ -52,4 +52,4 @@ function mapStateToProps(state){
   return state
 }
 
-export default connect(mapStateToProps)(Contacts);
+export default connect(mapStateToProps)(ContactsContainer);

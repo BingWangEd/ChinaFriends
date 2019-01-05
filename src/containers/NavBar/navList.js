@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
 import {NavLink} from 'react-router-dom';

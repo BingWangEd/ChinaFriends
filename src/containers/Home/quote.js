@@ -1,9 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
-
-
-const colorList = Object.keys(colors)
 
 const styles = {
   bold: {
@@ -30,7 +27,6 @@ const styles = {
     fontSize: '28px',
     lineHeight: '40px',
     color: colors.gray,
-    display: 'inline',
     float: 'left',
     width: '90%',
     "@media screen and (max-width: 720px)": {

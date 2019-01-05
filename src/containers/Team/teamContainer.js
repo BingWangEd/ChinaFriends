@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {team} from '../../helpers';
-import TeamSection from './teamSection';
-import BannerView from '../sessionBanner';
+import Team from './team';
+import BannerView from '../HelperComponents/sessionBanner';
 
-class Team extends Component {
+class TeamContainer extends Component {
   render(){
     return (
         <div>
           <BannerView imgSrc = 'images/Team.jpg' header = 'Meet The Team'
           />
-          <TeamSection team={team} />
+          <Team team={team} />
         </div>
     )
   }
@@ -22,4 +22,4 @@ function mapStateToProps(state){
 
 export default connect(
   mapStateToProps
-)(Team)
+)(TeamContainer)

@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
 import './programStyle.css'
 import {colors} from '../../helpers';
-import HeaderView from '../headerDeco';
+import SectionHeader from '../HelperComponents/sectionHeader';
 
 const styles = {
   center: {
@@ -50,8 +50,6 @@ const styles = {
   }
 };
 
-const colorList = Object.keys(colors)
-
 const ProgramDisplay = ({ programImage, items, title }) => {
   const itemsBox =  
     (<ul style={[styles.list]}>
@@ -67,7 +65,7 @@ const ProgramDisplay = ({ programImage, items, title }) => {
     </ul>)
   return (
     <div style={[styles.center]} className='clearfix'>
-      <HeaderView header = {title} />
+      <SectionHeader header = {title} />
       <div>
         <div className='clearfix' style={[styles.imageDiv, {backgroundImage: "url('"+ process.env.PUBLIC_URL+programImage +"')"}]}>
         </div>

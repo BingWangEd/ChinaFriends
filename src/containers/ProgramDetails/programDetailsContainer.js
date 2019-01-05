@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import ProgramSection from './programSection';
-import BannerView from '../sessionBanner';
+import ProgramDetails from './programDetails';
+import BannerView from '../HelperComponents/sessionBanner';
 import {programs} from '../../helpers';
 
-class ProgramDetail extends Component {
+class ProgramDetailContainer extends Component {
   render(){
     return (
         <div>
@@ -12,7 +12,7 @@ class ProgramDetail extends Component {
             imgSrc = "images/Experience.jpg"
             header = "Feel the Experience"
           />
-          <ProgramSection programs={programs} />
+          <ProgramDetails programs={programs} />
         </div>
     )
   }
@@ -24,4 +24,4 @@ function mapStateToProps(state){
 
 export default connect(
   mapStateToProps
-)(ProgramDetail)
+)(ProgramDetailContainer)

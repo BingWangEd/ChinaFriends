@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {programs} from '../../helpers';
 import {selectProgram, unselectProgram, setProgramImage, unsetProgramImage, selectSection} from '../../actions/index';
-import ProgramNames from './programNames';
+import Programs from './programs';
 
 class ProgramFlags extends Component {
   render(){
     return (
-      <ProgramNames 
+      <Programs 
         programs={programs}
         currProgram={this.props.selected_program}
         selectProgram={this.props.selectProgram}

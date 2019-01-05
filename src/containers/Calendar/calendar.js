@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
-import {colors} from '../../helpers';
-import HeaderDeco from '../headerDeco';
+import sectionHeader from '../HelperComponents/sectionHeader';
 
 const styles = {
   center: {
@@ -19,10 +18,10 @@ const styles = {
 };
 
 
-const CalendarSection = ({ holidays, quarters }) => (
+const Calendar = ({ holidays, quarters }) => (
   <div style={[styles.center]}>
     <div>
-      <HeaderDeco header = "Quaters" />
+      <sectionHeader header = "Quaters" />
       <table style={[styles.tableStyle]}>
         {Object.keys(quarters).map((key)=>{
           return (
@@ -35,7 +34,7 @@ const CalendarSection = ({ holidays, quarters }) => (
       </table>
     </div>
     <div>
-      <HeaderDeco header = "Calendar" />
+      <sectionHeader header = "Calendar" />
       <table style={[styles.tableStyle]}>
         {Object.keys(holidays).map((key)=>{
           return (
@@ -50,4 +49,4 @@ const CalendarSection = ({ holidays, quarters }) => (
   </div>
 )
 
-export default Radium(CalendarSection);
+export default Radium(Calendar);

@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Radium from 'radium';
-import {colors} from '../../helpers';
 
 const styles = {
   center: {
@@ -62,7 +61,7 @@ const styles = {
   }
 };
 
-const ContactForm = ({ contactsInfo }) => (
+const Contacts = ({ contactsInfo }) => (
   <div style={[styles.backgroundImage, styles.center]}>
     <div style={[styles.arrowDown]}></div>
     <div style={[styles.banner]}>
@@ -75,5 +74,5 @@ const ContactForm = ({ contactsInfo }) => (
   </div>
 )
 
-export default Radium(ContactForm);
+export default Radium(Contacts);
 
