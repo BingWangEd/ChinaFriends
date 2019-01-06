@@ -20,7 +20,7 @@ const styles = {
     display: 'block',
     fontSize: '16px',
     margin: '10px auto 0 auto',
-    width: '225.64px',
+    width: '230px',
     '@media screen and (min-width: 600px)': {
       margin: '10px 0 0 0'
     },

@@ -16,7 +16,7 @@ export const programs = {
       "Online": "Our remote lessons allow you to practice Chinese with a native speaker wherever you are in the world.",
       "Heritage": "Our heritage program is tailored towards heritage speakers's particular needs. The program adopts \"Heritage Chinese\", a teaching series designed to support learners with exposure to Chinese at home."},
     "description": "Learn Chinese with native speakers online or in person",
-    "imgSrc": "Images/Language.jpg"
+    "imgSrc": "/Images/Language.jpg"
   },
   "Culture": {
     "id": 2,
@@ -25,7 +25,7 @@ export const programs = {
       "Art craft": "Our art craft projects combines culture with language education through handson experiences.", 
       "Callligraphy": "Our calligraphy courses offer you a great opportunity to learn Chinese characters through this ancient aesthetically pleasing art form that turns writing into visual arts."},
     "description": "Enjoy fun and authentic cultural classes with experts from China",
-    "imgSrc": "Images/Culture.jpg"
+    "imgSrc": "/Images/Culture.jpg"
   },
   "Trip": {
     "id": 3,
@@ -33,7 +33,7 @@ export const programs = {
       "Summer camp": "Every summer, we offer Chinese workshops and courses in the City of Chicago for both children from Chicago that want to learn Chinese and for children from China that want to learn English in a major city in the U.S.", 
       "Personalized trip to China": "We have over 10 years of experience helping people get the Chinese language and culture education they want through travels to Chinese-speaking countries."},
     "description": "Adventure into a journey in China with itinerary tailored around your needs and interest",
-    "imgSrc": "Images/Trip.jpg"
+    "imgSrc": "/Images/Trip.jpg"
   },
   "AfterSchool": {
     "id": 4,
@@ -41,7 +41,7 @@ export const programs = {
       "Partner-Schools": "We work with multiple partner schools, both private and CPS, in the City of Chicago to help enrich students' after school life with courses varying from rigourous language teaching to creative Chinese culture projects." 
     },
     "description": "Immerse in the Chinese language and culture at an after school program at one of our partner schools",
-    "imgSrc": "Images/AfterSchool.jpg"
+    "imgSrc": "/Images/AfterSchool.jpg"
   }
 }
 

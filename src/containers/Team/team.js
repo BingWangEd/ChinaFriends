@@ -54,7 +54,7 @@ const Team = ({ team }) => (
         const name = member.FirstName + " " + member.LastName
         const title = member.Title
         const description = member.Description
-        const imgSrc = "Images/TeamPhotos/" + member.FirstName + member.LastName + ".jpg"
+        const imgSrc = process.env.PUBLIC_URL+"/Images/TeamPhotos/" + member.FirstName + member.LastName + ".jpg"
         return (
           <div style={[styles.container]}>
             <div key={index} style={[styles.column]}>
