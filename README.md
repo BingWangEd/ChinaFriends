@@ -1,5 +1,5 @@
 ## Project Background
-This website is designed and built by Bing Wang for the organization ChinaFriends. 
+This website is designed and built by Bing Wang for the organization ChinaFriends. You can find the demo [here](https://morning-ridge-10634.herokuapp.com/).
 
 ## Technical Support
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
