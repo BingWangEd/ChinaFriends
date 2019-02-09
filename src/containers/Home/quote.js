@@ -60,7 +60,7 @@ const QuoteWords = ({ person, title }) => (
   <div style={[styles.center]}>
     <div>
       <p style={[styles.quoteMark]}>&ldquo;</p>
-      <p style={[styles.words]}>Founded in 2004, ChinaFriends is dedicated to bringing the <span style={[styles.highlight]}>best Chinese language and culture education</span> to the City of Chicago.</p>
+      <p style={[styles.words]}>Founded in 2004, ChinaFriends is dedicated to bringing the <span style={[styles.highlight]}>best Chinese language and cultural education</span> to the City of Chicago.</p>
     </div>
     <p style={[styles.author]}>- <span style={[styles.bold]}>{person}</span> {title}</p>
   </div>
