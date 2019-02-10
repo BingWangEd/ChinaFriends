@@ -12,12 +12,12 @@ const styles = {
 
 const ClassScheduleTableCell = ({ classSchedules }) => (
 
-  classSchedules.map((s)=>{
+  classSchedules.map((s, index)=>{
     return (
-      <tr style={[styles.cellStyle]}>
-        <th style={[styles.cellFont]}>{s["Day"]}</th>
-        <th style={[styles.cellFont]}>{s["Time"]}</th>
-      </tr>
+        <tr key={index} style={[styles.cellStyle]}>
+          <th style={[styles.cellFont]}>{s["Day"]}</th>
+          <th style={[styles.cellFont]}>{s["Time"]}</th>
+        </tr>
     )
   })
 

@@ -88,12 +88,12 @@ const Programs = ({ programs, currProgram, programImage, selectProgram, unselect
         </div>
         <div style={[styles.programGrid, styles.centerMargin, styles.AfterSchoolResponsive, styles.ResponsiveAll]}>
           <ProgramPost 
-            title="AfterSchool"
-            id={programs["AfterSchool"].id}
-            ifSelected={currProgram==="AfterSchool" ? true : false}
+            title="After School"
+            id={programs["After School"].id}
+            ifSelected={currProgram==="After School" ? true : false}
             currProgram={currProgram}
-            description={programs["AfterSchool"].description}
-            imgSrc={programs["AfterSchool"].imgSrc}
+            description={programs["After School"].description}
+            imgSrc={programs["After School"].imgSrc}
             selectProgram={selectProgram}
             unselectProgram={unselectProgram}
             setProgramImage={setProgramImage}

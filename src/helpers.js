@@ -35,7 +35,7 @@ export const programs = {
     "description": "Journey into China with an itinerary tailored around your needs and interests.",
     "imgSrc": "/images/Trip.jpg"
   },
-  "AfterSchool": {
+  "After School": {
     "id": 4,
     "items": {
       "Partner Schools": "We work with multiple partner schools, both private and CPS, in the Chicago region to help enrich students' after school educations with courses varying from rigourous language programs to creative Chinese cultural projects." 
@@ -82,7 +82,19 @@ export const team = [
   "LastName": "Sun",
   "Title": "Dance Intructor",
   "Description": "Jelly majored in dance and choreography at the Northeast Normal University. She is a dance instructor in Guangdong Province and was actively involved in the dance competitions and charity events organized and sponsored by China Central Television(CCTV) and other major TV Broadcasting Stations."
-}
+},
+{
+  "FirstName": "Chrissy",
+  "LastName": "Mo",
+  "Title": "Intructor",
+  "Description": ""
+},
+{
+  "FirstName": "Yan",
+  "LastName": "Pang",
+  "Title": "Intructor",
+  "Description": ""
+},
 ]
 
 export const contacts = {

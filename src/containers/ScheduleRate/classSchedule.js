@@ -24,6 +24,7 @@ class ClassSchedule extends Component {
       {
         schedules.map((eachClass, index)=>{
             return (<ClassScheduleTable 
+              key = {index}
               className = {eachClass["className"]}
               classIntro = {eachClass["intro"]}
               classSchedules = {eachClass["schedule"]}

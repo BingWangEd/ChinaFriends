@@ -39,8 +39,15 @@ class ClassScheduleTable extends Component{
       introOpen = !introOpen;
       this.forceUpdate();
     }
+
+    let intro = introOpen ? this.props.classIntro : null;
+    
     let button = introOpen ? <button style={[styles.buttonStyle]} onClick = {toggle}>close</button> : <button style={[styles.buttonStyle]} onClick = {toggle}>read more about the class</button>
-    let intro = introOpen ? this.props.classIntro : null
+    
+    if (this.props.classIntro.length===0){
+      button = null;
+    }
+    
     return (
       <div style={[styles.classSectionStyle]}>
         <div style={[styles.classTitleStyle]}><h2 style={[styles.classHeaderStyle]}>{this.props.className}</h2>{button}</div>
