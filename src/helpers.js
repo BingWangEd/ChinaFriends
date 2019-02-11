@@ -87,13 +87,13 @@ export const team = [
   "FirstName": "Chrissy",
   "LastName": "Mo",
   "Title": "Intructor",
-  "Description": ""
+  "Description": "Chrissy was born and raised in Yantai, China. She graduated from Lanzhou University of Technology with a B.S. in engineering. She had Putonghua Test Certificate with Putonghua Level 2, Grade A. She enjoys working with children in Chinafriends. She believes that Chinese culture could be known by more and more people through education and communication."
 },
 {
   "FirstName": "Yan",
   "LastName": "Pang",
   "Title": "Intructor",
-  "Description": ""
+  "Description": "With her deep love of Chinese traditional culture and arts, after 10 years working in pharmaceutical industry, she decided to quit and followed her passion to introduce outstanding Chinese traditional culture to US, including the language, Chinese tea culture and others. She is friendly, kind and patient. And always trying her best to help students to learn more and share knowledge with friends."
 },
 ]
 
@@ -250,5 +250,5 @@ export const holidays = {
 }
 
 export const quarters = {
-  "Fall": "Sep.8, Saturday - Jan.27, Sunday 2019"
+  "Spring": "Feb.2, Saturday - Jun.16, Sunday 2019"
 }

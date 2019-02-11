@@ -35,7 +35,7 @@ let introOpen = false
 class ClassScheduleTable extends Component{
   render(){
     let toggle = (e) => {
-      e.preventDefault;
+      e.preventDefault();
       introOpen = !introOpen;
       this.forceUpdate();
     }
