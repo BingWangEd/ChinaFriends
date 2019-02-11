@@ -48,7 +48,7 @@ const ProgramPost = ({ title, id, ifSelected, description, imgSrc, selectProgram
     onMouseLeave={()=>{unselectProgram()}}
     onClick={()=>{ selectSection('Programs') }}
   >
-    <img src={process.env.PUBLIC_URL+'icons/'+title+'.png'} alt="icon" />
+    <img src={process.env.PUBLIC_URL+'icons/'+title.replace(' ', '')+'.png'} alt="icon" />
     <h2 style={[styles.title]}>{title}</h2>
     <p style={[styles.description, {color: ifSelected ? 'black' : colors.gray}]}>{description}</p>
   </div></NavLink>
