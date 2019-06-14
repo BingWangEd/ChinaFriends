@@ -80,7 +80,7 @@ export const team = [
 {
   "FirstName": "Jelly",
   "LastName": "Sun",
-  "Title": "Dance Intructor",
+  "Title": "Dance Intructor and Teacher",
   "Description": "Jelly majored in dance and choreography at the Northeast Normal University. She is a dance instructor in Guangdong Province and was actively involved in the dance competitions and charity events organized and sponsored by China Central Television(CCTV) and other major TV Broadcasting Stations."
 },
 {
@@ -114,7 +114,7 @@ export const schedules = [
     ]
   },
   {
-    "className": "Playground 3-5 yo",
+    "className": "Playgroup 3-5 yo",
     "intro": "Our specialized Mandarin playgroup for preschoolers is our most effective learning program for young children. Language skills are absorbed through music, story telling and play.",
     "schedule": [
       { "Day": "Monday-Friday",
@@ -243,12 +243,13 @@ export const rates = {
 }
 
 export const holidays = {
-  "Easter": "Mar.31 - Apr.1",
-  "Memorial Day": "May.26 - 28",
-  "Thanksgiving": "Nov.22 - 25",
-  "Christmas": "Dec.22 - Jan.2"
+  "2019 Thanksgiving": "Nov.28,2019 - Dec.1,2019",
+  "2019 Christmas": "Dec.21,2019 - Jan.3,2020",
+  "2020 Easter": "Apr.11 - 12,2020",
+  "2020 Memorial Day": "May.23 - 25,2020"
 }
 
 export const quarters = {
-  "Spring": "Feb.2, Saturday - Jun.16, Sunday 2019"
+  "2019 Fall": "Sep.7, Saturday - Jan.26, Sunday 2019",
+  "2020 Spring": "Feb.1, Saturday - Jun.14, Sunday 2020"
 }
