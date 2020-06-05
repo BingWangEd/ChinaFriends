@@ -105,8 +105,86 @@ export const contacts = {
 
 export const schedules = [
   {
-    "className": "Toddlers 13 mo-3 yo",
-    "intro": "A 50-minute session for children (18 mo to 3 years) to attend with their parents or caregivers. Adults learn with their children to discriminate sounds and tones through exposure to Chinese stories, music, movement and games.",
+    "className": "Summer Zoom: Toddlers 13 mo-2 yo",
+    "intro": "A 25-minute online session for children (18 mo to 2 years) to attend with their parents or caregivers. Adults learn with their children to discriminate sounds and tones through exposure to Chinese stories, music, movement and games.",
+    "schedule": [
+      { "Day": "Saturday",
+        "Time": "10:00 am-10:25 am"
+      }
+    ]
+  },
+  {
+    "className": "Summer Zoom: 3-5 yo",
+    "intro": "Our specialized online Mandarin playgroup for preschoolers is our most effective learning program for young children. Language skills are absorbed through music, story telling and play.",
+    "schedule": [
+      { "Day": "Saturday",
+        "Time": "8:30 am-9:20 am"
+      },
+      { "Day": "Sunday",
+        "Time": "9:00 am-9:50 am"
+      },
+      { "Day": "Sunday",
+        "Time": "10:00 am-10:50 am"
+      },
+    ]
+  },
+  {
+    "className": "Summer Zoom: Introduction",
+    "intro": "These are 80 minute online classes for children entering K-2nd grade. Children will learn words, phrases and sentences through practicing daily conversations. They will be taught through contextual and theme-based songs, games, activities, poems and role playing. We introduce Mandarin tones (pinyin), visual identification of characters and the understanding of simple commands and responses. This class is offered at Beginner (little or no prior experience) and Intermediate levels (at least 2 prior years of Mandarin instruction).",
+    "schedule": [
+      { "Day": "Saturday",
+        "Time": "10:00 am-10:50 am"
+      },
+    ]
+  },
+  {
+    "className": "Summer Zoom: Beginner 1",
+    "intro": "These are 80 minute drop-off classes for students entering 3rd-8th grade. At this level, your children will continue to advance their mastery of verbal and written Mandarin skills. This will prepare them to excel in real world interactions with native speakers.",
+    "schedule": [
+      { "Day": "Saturday",
+        "Time": "8:30 am-9:50 am"
+      },
+    ]
+  },
+  {
+    "className": "Summer Zoom: Beginner 2",
+    "intro": "These are 80 minute online classes for children who would like to further improve their Chinese through games and activities. Students will further improve their abilities to excel in real world situations.",
+    "schedule": [
+      { "Day": "Saturday",
+        "Time": "9:00 am-10:20 am"
+      },
+    ]
+  },
+  {
+    "className": "Summer Zoom: Intermediate 1",
+    "intro": "",
+    "schedule": [
+      { "Day": "Sunday",
+        "Time": "10:30 am-11:50 am"
+      },
+    ]
+  },
+  {
+    "className": "Summer Zoom: Intermediate 2",
+    "intro": "",
+    "schedule": [
+      { "Day": "Sunday",
+        "Time": "9:00 am-10:20 am"
+      },
+    ]
+  },
+  {
+    "className": "Summer Zoom: AP Level",
+    "intro": "",
+    "schedule": [
+      { "Day": "Sunday",
+        "Time": "9:00 am-10:20 am"
+      },
+    ]
+  },
+  {
+    "className": "Toddlers 13 mo-2 yo",
+    "intro": "A 50-minute session for children (18 mo to 2 years) to attend with their parents or caregivers. Adults learn with their children to discriminate sounds and tones through exposure to Chinese stories, music, movement and games.",
     "schedule": [
       { "Day": "Saturday",
         "Time": "10:00 am-10:50 am"
@@ -243,13 +321,14 @@ export const rates = {
 }
 
 export const holidays = {
-  "2019 Thanksgiving": "Nov.28,2019 - Dec.1,2019",
-  "2019 Christmas": "Dec.21,2019 - Jan.3,2020",
-  "2020 Easter": "Apr.11 - 12,2020",
-  "2020 Memorial Day": "May.23 - 25,2020"
+  "2020 Independence Day": "Jul 4 - 5, 2020",
+  "2020 Thanksgiving": "Nov 26 - 29, 2020",
+  "2020 Christmas": "Dec 24, 2020 - Jan 3, 2021",
+  "2021 Easter": "May 29 - 31, 2021",
 }
 
 export const quarters = {
-  "2019 Fall": "Sep.7, Saturday - Jan.26, Sunday 2019",
-  "2020 Spring": "Feb.1, Saturday - Jun.14, Sunday 2020"
+  "2020 Summer": "Jun 20 - Aug 30, 2020",
+  "2020 Fall": "Sep 12, 2020 - Jan 31, 2021",
+  "2021 Spring": "Feb 6 - Jun 20, 2021",
 }
