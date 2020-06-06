@@ -6,8 +6,8 @@ import {colors} from '../../helpers';
 const styles = {
   center: {
     margin: 'auto',
-    width: '85%',
-    paddingTop: '60px'
+    width: '80%',
+    paddingTop: '60px',
   },
   container:{
     '@media screen and (min-width: 500px)': {

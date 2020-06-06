@@ -2,6 +2,7 @@ import React from 'react';
 import Radium from 'radium';
 import {colors} from '../../helpers';
 import ContactButton from '../HelperComponents/contactButton';
+import {NavLink} from 'react-router-dom';
 
 const styles = {
   parallax: {
@@ -83,7 +84,7 @@ const styles = {
 const Banner = ({ imgSrc, chicagoBestImgSrc }) => (
     <div style={[styles.parallax]}>
       <div style={[styles.banner]}>
-        <div><img style={[styles.imageStyle]} src={process.env.PUBLIC_URL+chicagoBestImgSrc} alt="Chicago's No.1 Mandarin School" /></div>
+        <div><NavLink exact to='/Summer2020'><img style={[styles.imageStyle]} src={process.env.PUBLIC_URL+chicagoBestImgSrc} alt="Summer Camp" /></NavLink></div>
         <h1 style={[styles.wordStyle]}>Fun <span style={[styles.ChineseStyle]}>有乐趣</span></h1>
         <h1 style={[styles.wordStyle]}>Friends <span style={[styles.ChineseStyle]}>有朋友</span></h1>
         <h1 style={[styles.wordStyle]}>Fluency <span style={[styles.ChineseStyle]}>有的说</span></h1>

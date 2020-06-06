@@ -12,6 +12,7 @@ import ContactsPage from '../containers/Contacts/contactsPage';
 import ProgramDetails from '../containers/ProgramDetails/programDetailsContainer';
 import ScheduleRateContainer from '../containers/ScheduleRate/scheduleRateContainer';
 import TeamContainer from '../containers/Team/teamContainer';
+import summerCampContainer from '../containers/SummerCamp/summerCampContainer';
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
                 <Route path="/Team" component={TeamContainer} />
                 <Route path="/Calendar" component={CalendarContainer} />
                 <Route path="/Contact" component={ContactsPage} />
+                <Route path="/Summer2020" component={summerCampContainer} />
               </Switch>
             </div>
             <Footer />

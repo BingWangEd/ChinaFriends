@@ -4,7 +4,8 @@ export const sections = {
   "Schedule & Rate": 3,
   "Team": 4,
   "Calendar": 5,
-  "Contact": 6
+  "Contact": 6,
+  "Summer2020": 7,
 }
 
 export const programs = {
@@ -58,24 +59,12 @@ export const team = [
   "LastName": "Liu",
   "Title": "Executive Director",
   "Description": "Zhaoyi Liu hails from Nanjing, China. Graduated from Nanjing University with a major in Chinese Literature, she enjoys Chinese fiction and history. With 15+ years of experience in teaching Chinese language and culture, she is undoubtedly one of the best Chinese teachers in the City of Chicago."
-}, 
-{
-  "FirstName": "Xueting",
-  "LastName": "Ji",
-  "Title": "Teacher",
-  "Description": "Xueting graduated from Shenyang University with a bachelor degree in English. Prior to the U.S., Xueting taught at public k-6 schools in China for many years. She is passionate about teaching, and is proud of being part of the Chinafriends teaching team. She does her best to bring laugh and cheer to her students."
-}, 
-{
-  "FirstName": "Lin",
-  "LastName": "Wan",
-  "Title": "Teacher and Guzheng Instructor",
-  "Description": "Lina is from Wuhan. She majors in Mathematics at DePaul University. She is a master in playing the traditional Chinese music instrument Guzheng. She brought lots fun and laugh in the classroom."
-}, 
+},
 {
   "FirstName": "Xiaojing",
   "LastName": "Liu",
   "Title": "Remote Teacher",
-  "Description": "Alice is from Weifang, China. She gained her B.A. in Art Design, a Teaching Certificate in Teaching Chinese as a Second Language from Beijing Language and Culture University, and an M.Ed. in Instructional Technology from Southern Illinois Univerisity Edwardsville. She is an expert in using educational technology and enjoys every moment with her students in her classroom."
+  "Description": "Alice is from Weifang, China. She gained her B.A. in Art Design and a Certificate in Teaching Chinese as a Second Language from Beijing Language and Culture University, and an M.Ed. in Instructional Technology from Southern Illinois Univerisity Edwardsville. She is an expert in using educational technology and enjoys every moment with her students in her classroom."
 }, 
 {
   "FirstName": "Jelly",
@@ -84,16 +73,22 @@ export const team = [
   "Description": "Jelly majored in dance and choreography at the Northeast Normal University. She is a dance instructor in Guangdong Province and was actively involved in the dance competitions and charity events organized and sponsored by China Central Television(CCTV) and other major TV Broadcasting Stations."
 },
 {
-  "FirstName": "Chrissy",
-  "LastName": "Mo",
-  "Title": "Intructor",
-  "Description": "Chrissy was born and raised in Yantai, China. She graduated from Lanzhou University of Technology with a B.S. in engineering. She had Putonghua Test Certificate with Putonghua Level 2, Grade A. She enjoys working with children in Chinafriends. She believes that Chinese culture could be known by more and more people through education and communication."
-},
-{
-  "FirstName": "Yan",
+  "FirstName": "Xuanlan",
   "LastName": "Pang",
   "Title": "Intructor",
-  "Description": "With her deep love of Chinese traditional culture and arts, after 10 years working in pharmaceutical industry, she decided to quit and followed her passion to introduce outstanding Chinese traditional culture to US, including the language, Chinese tea culture and others. She is friendly, kind and patient. And always trying her best to help students to learn more and share knowledge with friends."
+  "Description": "After getting her Ph.D. degree in Pharmaceutical Chemistry and working in R&D for ~10 years, Dr. Pang decided to follow her passion in Education and Psychology. She enjoys sharing the knowledge with students and exploring the better way to engage them in learning. To help students improve focus and reduce stress, the concept of mindfulness is also applied to her class."
+},
+{
+  "FirstName": "Sherry",
+  "LastName": "Wang",
+  "Title": "Intructor",
+  "Description": "Yixuan is from Heze, Shangdong, China. She graduated from Northeastern Illinois University with a bachelor’s degree in Finance. During that time she tutored Chinese in the university and it brought her the passion of teaching Chinese. She is a certified substitute teacher with the focus of teaching the Chinese Language. She also is proficient in playing the bamboo and American flute. She likes to be able to show and teach the Chinese culture to the young students. While teaching these lessons she wants to have everyone have a better understanding of the language and the culture that surrounds it."
+},
+{
+  "FirstName": "Jenny",
+  "LastName": "Pan",
+  "Title": "Intructor",
+  "Description": "I am a native Mandarin Chinese Speaker from Fujian, China. I am passionate for teaching and propagate Chinese. I believe with my background, I am able to help people develop a greater understanding of Chinese culture and language."
 },
 ]
 

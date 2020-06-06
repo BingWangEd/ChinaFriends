@@ -25,7 +25,7 @@ class NavBar extends Component {
       width: '85%'
     },
     burgerMenuResponsive: {
-      '@media screen and (min-width: 880px)': {
+      '@media screen and (min-width: 1020px)': {
         display: 'none'
       }
     },
@@ -33,7 +33,7 @@ class NavBar extends Component {
       position: 'absolute',
       float: 'left',
       paddingLeft: 0,
-      '@media screen and (max-width: 880px)': {
+      '@media screen and (max-width: 1020px)': {
         display: 'none'
       }
     }

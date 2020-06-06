@@ -56,6 +56,24 @@ const ClassRates = ({ rates }) => (
       </table>
     </div>
     <div style={[styles.sectionStyle]}>
+      <h2 style={[styles.headerStyle]}>Summer Zoom</h2>
+      <p style={[styles.introStyle]}>10 weeks</p>
+      <table>
+        <tr> 
+          <th style={[{ width: "400px"}]}>25 min (only tots class)</th>
+          <td>$149</td>
+        </tr>
+        <tr> 
+          <th style={[{ width: "400px"}]}>50 min</th>
+          <td>$299</td>
+        </tr>
+        <tr> 
+          <th style={[{ width: "400px"}]}>80 min</th>
+          <td>$399</td>
+        </tr>
+      </table>
+    </div>
+    <div style={[styles.sectionStyle]}>
       <h2 style={[styles.headerStyle]}>Adults</h2>
       <p style={[styles.introStyle]}>{rates.Adults.Length}; {rates.Adults.Intro}</p>
       <table>
