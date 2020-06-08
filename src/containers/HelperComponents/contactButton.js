@@ -35,7 +35,9 @@ const styles = {
 class ContactButton extends Component{
   render(){
     return (
-      <NavLink to='/Contact' style={{textDecoration: 'none'}}><button onClick={(e)=>{ e.preventDefault; this.props.selectSection("Contact"); }} style={[styles.button]}>Contact Us to Sign Up</button></NavLink>
+      <NavLink to='/Contact' style={{textDecoration: 'none'}}>
+        <button onClick={(e)=>{ e.preventDefault; this.props.selectSection("Contact"); }} style={[styles.button]}>Contact Us to Sign Up</button>
+      </NavLink>
     )
   }
 } 

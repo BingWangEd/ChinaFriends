@@ -21,12 +21,17 @@ const styles = {
   },
 };
 
-
 const SummerCamp = () => (
   <div style={[styles.center]}> 
     <SectionHeader header = "Summer 2020" />
     <h2 style={[styles.title]}>Check out one of the 'e-tours' in Beijing</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/25Pg64WSa8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen={true}></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/25Pg64WSa8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Summer Camp Video Demo" allowfullscreen={true}></iframe>
+    <h2 style={[styles.title]}>PDF Introduction</h2>
+    <a href="https://drive.google.com/file/d/1C_I50ucX-S4z58mtz8V6UNqIqz2QFzik/view?usp=sharing">Click to download the program pdf introduction</a>
+    <h2 style={[styles.title]}>E-camp Registration form:</h2>
+    <div style={[styles.text]}>
+      <a href="https://docs.google.com/forms/d/1ALG0quYTk5RFLnf338y1ULUhXYNNvl3kT0N3Q7TnDNw/edit">Click to Fill Out the Form</a>
+    </div>
     <h2 style={[styles.title]}>Description</h2>
     <div style={[styles.text]}>
       Great news!  We are very proud to bring you this historic announcement!<br/><br/>
@@ -63,11 +68,7 @@ const SummerCamp = () => (
     </div>
     <h2 style={[styles.title]}>Price:</h2>
     <div style={[styles.text]}>
-      $325 per session
-    </div>
-    <h2 style={[styles.title]}>E-camp Registration form:</h2>
-    <div style={[styles.text]}>
-      <a href="https://docs.google.com/forms/d/1ALG0quYTk5RFLnf338y1ULUhXYNNvl3kT0N3Q7TnDNw/edit">Click to Fill Out the Form</a>
+      $200 per week
     </div>
   </div>
 )
