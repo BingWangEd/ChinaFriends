@@ -68,7 +68,7 @@ const SummerCamp = () => (
     </div>
     <h2 style={[styles.title]}>Price:</h2>
     <div style={[styles.text]}>
-      $200 per week
+      $195 per week
     </div>
   </div>
 )
