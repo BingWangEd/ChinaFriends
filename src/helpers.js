@@ -100,7 +100,7 @@ export const contacts = {
 
 export const schedules = [
   {
-    "className": "Summer Zoom: Toddlers 13 mo-2 yo",
+    "className": "Zoom: Toddlers 13 mo-2 yo",
     "intro": "A 25-minute online session for children (18 mo to 2 years) to attend with their parents or caregivers. Adults learn with their children to discriminate sounds and tones through exposure to Chinese stories, music, movement and games.",
     "schedule": [
       { "Day": "Saturday",
@@ -109,11 +109,11 @@ export const schedules = [
     ]
   },
   {
-    "className": "Summer Zoom: 3-5 yo",
+    "className": "Zoom: 3-5 yo",
     "intro": "Our specialized online Mandarin playgroup for preschoolers is our most effective learning program for young children. Language skills are absorbed through music, story telling and play.",
     "schedule": [
       { "Day": "Saturday",
-        "Time": "8:30 am-9:20 am"
+        "Time": "9:00 am-9:50 am"
       },
       { "Day": "Sunday",
         "Time": "9:00 am-9:50 am"
@@ -124,43 +124,40 @@ export const schedules = [
     ]
   },
   {
-    "className": "Summer Zoom: Introduction",
+    "className": "Zoom: Introduction",
     "intro": "These are 80 minute online classes for children entering K-2nd grade. Children will learn words, phrases and sentences through practicing daily conversations. They will be taught through contextual and theme-based songs, games, activities, poems and role playing. We introduce Mandarin tones (pinyin), visual identification of characters and the understanding of simple commands and responses. This class is offered at Beginner (little or no prior experience) and Intermediate levels (at least 2 prior years of Mandarin instruction).",
     "schedule": [
       { "Day": "Saturday",
+        "Time": "10:30 am-11:20 am"
+      },
+      { "Day": "Sunday",
         "Time": "10:00 am-10:50 am"
       },
     ]
   },
   {
-    "className": "Summer Zoom: Beginner 1",
+    "className": "Zoom: Beginner 1",
     "intro": "These are 80 minute drop-off classes for students entering 3rd-8th grade. At this level, your children will continue to advance their mastery of verbal and written Mandarin skills. This will prepare them to excel in real world interactions with native speakers.",
     "schedule": [
-      { "Day": "Saturday",
-        "Time": "8:30 am-9:50 am"
+      { "Day": "Sunday",
+        "Time": "10:00 am-11:20 am"
       },
     ]
   },
   {
-    "className": "Summer Zoom: Beginner 2",
+    "className": "Zoom: Beginner 2",
     "intro": "These are 80 minute online classes for children who would like to further improve their Chinese through games and activities. Students will further improve their abilities to excel in real world situations.",
     "schedule": [
       { "Day": "Saturday",
         "Time": "9:00 am-10:20 am"
       },
-    ]
-  },
-  {
-    "className": "Summer Zoom: Intermediate 1",
-    "intro": "",
-    "schedule": [
       { "Day": "Sunday",
         "Time": "10:30 am-11:50 am"
       },
     ]
   },
   {
-    "className": "Summer Zoom: Intermediate 2",
+    "className": "Zoom: Intermediate 1",
     "intro": "",
     "schedule": [
       { "Day": "Sunday",
@@ -169,7 +166,7 @@ export const schedules = [
     ]
   },
   {
-    "className": "Summer Zoom: AP Level",
+    "className": "Zoom: Intermediate 2",
     "intro": "",
     "schedule": [
       { "Day": "Sunday",
@@ -178,107 +175,14 @@ export const schedules = [
     ]
   },
   {
-    "className": "Toddlers 13 mo-2 yo",
-    "intro": "A 50-minute session for children (18 mo to 2 years) to attend with their parents or caregivers. Adults learn with their children to discriminate sounds and tones through exposure to Chinese stories, music, movement and games.",
-    "schedule": [
-      { "Day": "Saturday",
-        "Time": "10:00 am-10:50 am"
-      }
-    ]
-  },
-  {
-    "className": "Playgroup 3-5 yo",
-    "intro": "Our specialized Mandarin playgroup for preschoolers is our most effective learning program for young children. Language skills are absorbed through music, story telling and play.",
-    "schedule": [
-      { "Day": "Monday-Friday",
-        "Time": "9:00 am-12:00 pm"
-      }
-    ]
-  },
-  {
-    "className": "3-5 yo",
-    "intro": "These are 80-minute drop-off classes for children between 3 and 5 years old. Children are immersed in a relaxed and fun atmosphere with our native Mandarin teachers in small groups to learn Mandarin naturally through stories, music, activities, games and art. Student utilize common words and phrases including colors, shapes, numbers, foods, animals, people/family, etc...",
-    "schedule": [
-      { "Day": "Monday-Friday",
-        "Time": "1:00 am-4:00 pm"
-      },
-      { "Day": "Saturday",
-        "Time": "8:30 am-9:50 am"
-      },
-      { "Day": "Sunday",
-        "Time": "9:00 am-10:20 am, 10:30 am-11:50 am"
-      }
-    ]
-  },
-  {
-    "className": "6-7 yo Introduction",
-    "intro": "These are 80 minute drop-off classes for children entering K-2nd grade. Children will learn words, phrases and sentences through practicing daily conversations. They will be taught through contextual and theme-based songs, games, activities, poems and role playing. We introduce Mandarin tones (pinyin), visual identification of characters and the understanding of simple commands and responses. This class is offered at Beginner (little or no prior experience) and Intermediate levels (at least 2 prior years of Mandarin instruction).",
-    "schedule": [
-      { "Day": "Monday-Wednesday, Friday",
-        "Time": "4:15 pm-5:35 pm"
-      },
-      { "Day": "Saturday",
-        "Time": "8:30 am-9:50 am"
-      },
-      { "Day": "Sunday",
-        "Time": "10:30 am-11:50 am"
-      }
-    ]
-  },
-  {
-    "className": "Beginner 1",
-    "intro": "These are 80 minute drop-off classes for students entering 3rd-8th grade. At this level, your children will continue to advance their mastery of verbal and written Mandarin skills. This will prepare them to excel in real world interactions with native speakers.",
-    "schedule": [
-      { "Day": "Monday-Wednesday, Friday",
-        "Time": "4:15 pm-5:35pm"
-      },
-      { "Day": "Saturday",
-        "Time": "10:00 am-11:20 am"
-      },
-      { "Day": "Sunday",
-        "Time": "9:00 am-10:20 am, 10:30 am-11:50 am"
-      }
-    ]
-  },
-  {
-    "className": "Beginner 2",
-    "intro": "These are 80 minute drop-off classes for children who would like to further improve their Chinese through games and activities. Students will further improve their abilities to excel in real world situations.",
-    "schedule": [
-      { "Day": "Monday-Wednesday, Friday",
-        "Time": "4:15 pm-5:35pm"
-      },
-      { "Day": "Sunday",
-        "Time": "9:00 am-10:20 am, 10:30 am-11:50 am"
-      }
-    ]
-  },
-  {
-    "className": "Chinese Dance Class",
-    "intro": "",
-    "schedule": [
-      { "Day": "Sunday",
-        "Time": "12:00 pm-1:00 pm"
-      }
-    ]
-  },
-  {
-    "className": "Intermediate 1",
-    "intro": "",
-    "schedule": [
-      { "Day": "Sunday",
-        "Time": "10:30 am-11:50 am"
-      }
-    ]
-  },
-  {
-    "className": "Intermediate 2",
+    "className": "Zoom: AP Level",
     "intro": "",
     "schedule": [
       { "Day": "Sunday",
         "Time": "9:00 am-10:20 am"
-      }
+      },
     ]
-  }
+  },
 ]
 
 export const rates = {
@@ -287,15 +191,11 @@ export const rates = {
     "Intro": "Includes all books, class materials, and online support.",
     "Rate": {
       "Once/Week": {
-        "50 min": "$570",
+        "25 min": "$269 (tots)",
+        "50 min": "$539",
         "80 min": "$715",
-        "Playground": "$1,260"
+
       },
-      "Twice/Week": {
-        "50 min": "$1,028",
-        "80 min": "$1,240",
-        "Playground": "$2,142"
-      }
     }
   },
   "Adults": {
@@ -316,14 +216,12 @@ export const rates = {
 }
 
 export const holidays = {
-  "2020 Independence Day": "Jul 4 - 5, 2020",
   "2020 Thanksgiving": "Nov 26 - 29, 2020",
   "2020 Christmas": "Dec 24, 2020 - Jan 3, 2021",
   "2021 Easter": "May 29 - 31, 2021",
 }
 
 export const quarters = {
-  "2020 Summer": "Jun 20 - Aug 30, 2020",
   "2020 Fall": "Sep 12, 2020 - Jan 31, 2021",
   "2021 Spring": "Feb 6 - Jun 20, 2021",
 }

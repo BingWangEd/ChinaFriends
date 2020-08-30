@@ -4,11 +4,9 @@ import Banner from './banner';
 
 class BannerContainer extends Component {
   render(){
-    const imgSrc = "/Images/Front.jpg"
-    // const chicagoBestImgSrc = "/ChgoMagBestOf.png"
-    const chicagoBestImgSrc = "/SummerCamp.png"
+    const chicagoBestImgSrc = "/ChgoMagBestOf.png"
     return (
-      <Banner imgSrc = {imgSrc} chicagoBestImgSrc = {chicagoBestImgSrc} />
+      <Banner chicagoBestImgSrc = {chicagoBestImgSrc} />
     )
   }
 }
